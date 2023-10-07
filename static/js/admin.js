@@ -1,5 +1,5 @@
-// while (prompt("Введіть пароль") != "Я Леся")
-//     alert("не правильний пароль")
+while (prompt("Введіть пароль") != "obozrevatelbest")
+    alert("не правильний пароль")
 
 function selfDelete(element) {
     element.parentElement.remove()
