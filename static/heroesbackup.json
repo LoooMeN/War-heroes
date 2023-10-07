@@ -1,0 +1,35 @@
+{
+  "heroes":
+  [
+    {
+      "image": "../static/photos/Rectangle 1.png",
+      "name": "test name",
+      "region": "test region",
+      "gender": "male",
+      "position": "test position",
+      "death_date": "2023-10-12",
+      "url": "google",
+      "date_added": "2023-10-12"
+    },
+    {
+      "image": "",
+      "name": "",
+      "region": "",
+      "gender": "",
+      "position": "",
+      "death_date": "",
+      "url": "",
+      "date_added": ""
+    },
+    {
+      "image": "",
+      "name": "",
+      "region": "",
+      "gender": "",
+      "position": "",
+      "death_date": "",
+      "url": "",
+      "date_added": ""
+    }
+  ]
+}

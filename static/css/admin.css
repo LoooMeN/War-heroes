@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans";
+}
+
+button {
+  padding: 0 5px;
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
+}
+
+html {
+  min-width: 325px;
+}
+
+.main_wrapper {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: beige;
+  display: flex;
+  justify-content: center;
+}
+.main_wrapper .content_wrapper {
+  width: 80%;
+  min-width: 325px;
+  background-color: white;
+  padding: 20px 20px;
+}
+.main_wrapper .content_wrapper .filter_wrapper {
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+}
+.main_wrapper .content_wrapper .filter_wrapper button {
+  background-color: greenyellow;
+  padding: 3px 5px;
+}
+.main_wrapper .content_wrapper .items_wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  grid-gap: 10px;
+  margin: 0 0 20px 0;
+}
+.main_wrapper .content_wrapper .items_wrapper .item_wrapper {
+  border: 1px solid black;
+  padding: 10px;
+  width: 100%;
+  min-width: 300px;
+  box-sizing: border-box;
+  position: relative;
+}
+.main_wrapper .content_wrapper .items_wrapper .item_wrapper .image_select {
+  display: flex;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+}
+.main_wrapper .content_wrapper .items_wrapper .item_wrapper .image_select .image_button_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  margin: 0 3px;
+  height: 142px;
+  box-sizing: border-box;
+}
+.main_wrapper .content_wrapper .items_wrapper .item_wrapper .image_select .image_button_wrapper label {
+  padding: 10px 5px;
+  border: 1px solid black;
+  border-radius: 3px;
+  background-color: rgb(237, 237, 237);
+}
+.main_wrapper .content_wrapper .items_wrapper .item_wrapper .image_select .image_button_wrapper .image_input {
+  display: none;
+}
+.main_wrapper .content_wrapper .items_wrapper .item_wrapper .image_select img {
+  width: 142px;
+  height: 142px;
+}
+.main_wrapper .content_wrapper .items_wrapper .item_wrapper .input_wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+.main_wrapper .content_wrapper .items_wrapper .item_wrapper .delete_button {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+}
+.main_wrapper h1 {
+  font-family: "Open Sans";
+}

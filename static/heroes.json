@@ -1,0 +1,34 @@
+{
+  "heroes": [
+    {
+      "image": "http://127.0.0.1:5000/static/photos/FileStorageNewsGalleryImages%20(1).jpg",
+      "name": "4321",
+      "region": "",
+      "gender": "",
+      "position": "",
+      "death_date": "",
+      "url": "",
+      "date_added": "2023-10-07"
+    },
+    {
+      "image": "http://127.0.0.1:5000/static/photos/FileStorageNewsGalleryImages.jpg",
+      "name": "2134",
+      "region": "",
+      "gender": "",
+      "position": "",
+      "death_date": "",
+      "url": "",
+      "date_added": "2023-10-07"
+    },
+    {
+      "image": "http://127.0.0.1:5000/static/photos/Rectangle%201.png",
+      "name": "test name",
+      "region": "test region",
+      "gender": "male",
+      "position": "test position",
+      "death_date": "2023-10-12",
+      "url": "male",
+      "date_added": "2023-10-12"
+    }
+  ]
+}
