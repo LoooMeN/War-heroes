@@ -1,4 +1,5 @@
 import json
+import os
 
 from PIL import Image
 from flask import Flask, send_from_directory, render_template, request
@@ -37,7 +38,7 @@ def home():
         return "Page not found!"
 
 
-@app.route('/uploadImage', methods=['POST'])
+@app.route('/Images', methods=['POST'])
 def upload_file():
     if 'newImage' not in request.files:
         return 'No file part'
@@ -68,6 +69,16 @@ def upload_file():
         filename = f'./static/photos/{file.filename}'
         new_image.save(filename)
         return filename
+
+
+@app.route('/Images', methods=['DELETE'])
+def delete_file():
+    filename = json.loads(request.data)['filename']
+    try:
+        os.remove(f'./static/photos/{filename}')
+        return {'status': 'ok'}
+    except FileNotFoundError:
+        return {'status': 'error', 'message': 'File not found'}
 
 
 if __name__ == '__main__':

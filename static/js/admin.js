@@ -102,7 +102,7 @@ function saveImage(upload) {
     const formData = new FormData();
     formData.append('newImage', files[0])
 
-    fetch('/uploadImage', {
+    fetch('/Images', {
         method: "POST",
         body: formData
     }).then(response => response.text())
