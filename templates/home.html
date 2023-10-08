@@ -12,7 +12,55 @@
             <img class= "hero_image"src="{{ url_for('static', filename='images/heroImage.png') }}" alt="">
             <img class="scroll_button" src="{{ url_for('static', filename='images/scroll_button.png') }}" alt="">
         </div>
-        <img class="oboz_logo" src="{{ url_for('static', filename='images/Obozevatel_Logo.png') }}" alt="">
+        <img class="oboz_logo" src="{{ url_for('static', filename='images/Obozevatel_Logo.svg') }}" alt="">
+    </div>
+    <div class="content_wrapper">
+       <div class="filters_wrapper">
+            <div class="filter_wrapper search">
+                <label for="">Пошук</label>
+                <input class="hero_name_filter" type="text" placeholder="Введіть ім'я">
+                <div class="icon_image_wrapper">
+                    <img src="{{ url_for('static', filename='images/search.png') }}" alt="">
+                </div>
+            </div>
+            <div class="filter_wrapper select">
+                <label for="">Область</label>
+                <select name="region" id="region_select">
+                    <option value="all">Всі області</option>
+                </select>
+                <img class="select_down_arrow" src="{{ url_for('static', filename='images/down_arrow.svg') }}" alt="">
+            </div>
+            <div class="filter_wrapper select">
+                <label for="">Стать</label>
+                <select name="gender" id="gender_select">
+                    <option value="all">Будь яка</option>
+                </select>
+                <img class="select_down_arrow" src="{{ url_for('static', filename='images/down_arrow.svg') }}" alt="">
+            </div>
+            <div class="filter_wrapper datepicker">
+                <label for="">Дата від</label>
+                <input id="after_date" type="date">
+                <div class="icon_image_wrapper">
+                    <img src="{{ url_for('static', filename='images/calendar.svg') }}" alt="">
+                </div>
+            </div>
+            <div class="filter_wrapper datepicker">
+                <label for="">Дата до</label>
+                <input id="before_date" type="date">
+                <div class="icon_image_wrapper">
+                    <img src="{{ url_for('static', filename='images/calendar.svg') }}" alt="">
+                </div>
+            </div>
+       </div> 
+       <div class="hero_cards">
+            <div class="hero_card">
+                <img src="{{ data['heroes'][0]['image'] }}" alt="">
+                {% set name = data['heroes'][0]['name'].split(' ') %}
+                <h2>{{name[0]}}<br>{{name[1]}}</h2>
+                <p>{{ data['heroes'][0]['region'] }}</p>
+                <p>{{ data['heroes'][0]['position'] }}</p>
+            </div>
+       </div>
     </div>
     <p>{{ data['heroes'][0]['image'] }}</p>
 </body>

@@ -1,5 +1,5 @@
-while (prompt("Введіть пароль") != "obozrevatelbest")
-    alert("не правильний пароль")
+// while (prompt("Введіть пароль") != "obozrevatelbest")
+//     alert("не правильний пароль")
 
 function selfDelete(element) {
     element.parentElement.remove()
@@ -85,7 +85,7 @@ function populateAdmin(data) {
                     <!-- url -->
                     <div class="input_wrapper">
                         <label for="">Посилання</label>
-                        <input class="heroLink" type="text" value="`+elem["gender"]+`">
+                        <input class="heroLink" type="text" value="`+elem["url"]+`">
                     </div>
                     <button class="delete_button" onclick="selfDelete(this)">Видалити</button>
                 `
