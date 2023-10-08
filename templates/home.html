@@ -10,43 +10,45 @@
     <div class="first_screen_wrapper" style="background-image: url('{{ url_for('static', filename='images/background.png') }}');">
         <div class="hero_image_wrapper">
             <img class= "hero_image"src="{{ url_for('static', filename='images/heroImage.png') }}" alt="">
-            <img class="scroll_button" src="{{ url_for('static', filename='images/scroll_button.png') }}" alt="">
+            <a href="#content">
+                <img class="scroll_button" src="{{ url_for('static', filename='images/scroll_button.png') }}" alt="">
+            </a>
         </div>
         <img class="oboz_logo" src="{{ url_for('static', filename='images/Obozevatel_Logo.svg') }}" alt="">
     </div>
-    <div class="content_wrapper">
+    <div class="content_wrapper" id="content">
        <div class="filters_wrapper">
             <div class="filter_wrapper search">
                 <label for="">Пошук</label>
-                <input class="hero_name_filter" type="text" placeholder="Введіть ім'я">
-                <div class="icon_image_wrapper">
+                <input class="hero_name_filter" type="text" placeholder="Введіть ім'я" id="hero_name_filter">
+                <div class="icon_image_wrapper" onclick="filter(this, 'name')">
                     <img src="{{ url_for('static', filename='images/search.png') }}" alt="">
                 </div>
             </div>
             <div class="filter_wrapper select">
                 <label for="">Область</label>
-                <select name="region" id="region_select">
+                <select name="region" id="region_select" onchange="filter(this.value, 'region')">
                     <option value="all">Всі області</option>
                 </select>
                 <img class="select_down_arrow" src="{{ url_for('static', filename='images/down_arrow.svg') }}" alt="">
             </div>
             <div class="filter_wrapper select">
                 <label for="">Стать</label>
-                <select name="gender" id="gender_select">
+                <select name="gender" id="gender_select" onchange="filter(this.value, 'gender')">
                     <option value="all">Будь яка</option>
                 </select>
                 <img class="select_down_arrow" src="{{ url_for('static', filename='images/down_arrow.svg') }}" alt="">
             </div>
             <div class="filter_wrapper datepicker">
                 <label for="">Дата від</label>
-                <input id="after_date" type="date">
+                <input id="after_date" type="date" onchange="filterDate()">
                 <div class="icon_image_wrapper">
                     <img src="{{ url_for('static', filename='images/calendar.svg') }}" alt="">
                 </div>
             </div>
             <div class="filter_wrapper datepicker">
                 <label for="">Дата до</label>
-                <input id="before_date" type="date">
+                <input id="before_date" type="date" onchange="filterDate()">
                 <div class="icon_image_wrapper">
                     <img src="{{ url_for('static', filename='images/calendar.svg') }}" alt="">
                 </div>
@@ -54,17 +56,30 @@
        </div> 
        <div class="hero_cards">
             {% for hero in data %}
-            <div class="hero_card" dateadded="{{hero['date_added']}}" deathdate="{{hero['death_date']}}">
-                <a href="{{ hero['url']}}">
-                    <img src="{{ hero['image'] }}" alt="">
-                    {% set name = hero['name'].split(' ') %}
-                    <h2>{{name[0]}}<br>{{name[1]}}</h2>
-                    <p>{{ hero['region'] }}</p>
-                    <p>{{ hero['position'] }}</p>
-                </a>
-            </div>
+                <div class="hero_card" name="{{hero['name']}}" dateadded="{{hero['date_added']}}" deathdate="{{hero['death_date']}}" gender="{{hero['gender']}}" region="{{ hero['region'] }}">
+                    <a href="{{ hero['url']}}">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="{{ hero['image'] }}" alt="">
+                            <div class="details">
+                                <p class="details_text">Детальніше</p>
+                                <img class="details_arrow" src="{{ url_for('static', filename='images/down_arrow.svg') }}" alt="">
+                            </div>
+                        </div>
+                        {% set name = hero['name'].split(' ') %}
+                        <h2>{{name[0]}}<br>{{name[1]}}</h2>
+                        <p>{{ hero['region'] }}</p>
+                        <p>{{ hero['position'] }}</p>
+                        <p>{{hero['death_date']}}</p>
+                    </a>
+                </div>
             {% endfor %}
        </div>
+    </div>
+    <div class="footer">
+        <div class="footer_wrapper">
+            <img src="{{ url_for('static', filename='images/Obozevatel_Logo.svg') }}" alt="">
+            <p>2023</p>
+        </div>
     </div>
 </body>
 </html>

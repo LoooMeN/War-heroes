@@ -1,7 +1,7 @@
 {
   "heroes": [
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "John Doe",
       "region": "Kyiv",
       "gender": "male",
@@ -11,7 +11,7 @@
       "position": "Sergeant"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Jane Smith",
       "region": "Lviv",
       "gender": "female",
@@ -21,7 +21,7 @@
       "position": "Captain"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Mike Johnson",
       "region": "Kharkiv",
       "gender": "male",
@@ -31,7 +31,7 @@
       "position": "Major"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Emily Davis",
       "region": "Odesa",
       "gender": "female",
@@ -41,7 +41,7 @@
       "position": "Lieutenant"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "David Wilson",
       "region": "Dnipro",
       "gender": "male",
@@ -51,7 +51,7 @@
       "position": "Colonel"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Sarah Brown",
       "region": "Zaporizhia",
       "gender": "female",
@@ -61,7 +61,7 @@
       "position": "General"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Robert Lee",
       "region": "Donetsk",
       "gender": "male",
@@ -71,7 +71,7 @@
       "position": "Sergeant"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Linda White",
       "region": "Khmelnytskyi",
       "gender": "female",
@@ -81,7 +81,7 @@
       "position": "Captain"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "William Harris",
       "region": "Zhytomyr",
       "gender": "male",
@@ -91,7 +91,7 @@
       "position": "Major"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Amanda Clark",
       "region": "Ternopil",
       "gender": "female",
@@ -101,7 +101,7 @@
       "position": "Lieutenant"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "James Turner",
       "region": "Rivne",
       "gender": "male",
@@ -111,7 +111,7 @@
       "position": "Colonel"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Jessica Hall",
       "region": "Chernivtsi",
       "gender": "female",
@@ -121,7 +121,7 @@
       "position": "General"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Michael Adams",
       "region": "Ivano-Frankivsk",
       "gender": "male",
@@ -131,7 +131,7 @@
       "position": "Sergeant"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Jennifer Moore",
       "region": "Cherkasy",
       "gender": "female",
@@ -141,7 +141,7 @@
       "position": "Captain"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Christopher Taylor",
       "region": "Poltava",
       "gender": "male",
@@ -151,7 +151,7 @@
       "position": "Major"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Mary Martinez",
       "region": "Sumy",
       "gender": "female",
@@ -161,7 +161,7 @@
       "position": "Lieutenant"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Daniel Garcia",
       "region": "Mykolaiv",
       "gender": "male",
@@ -171,7 +171,7 @@
       "position": "Colonel"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Patricia Rodriguez",
       "region": "Vinnytsia",
       "gender": "female",
@@ -181,7 +181,7 @@
       "position": "General"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Joseph Wilson",
       "region": "Luhansk",
       "gender": "male",
@@ -191,7 +191,7 @@
       "position": "Sergeant"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Karen Hall",
       "region": "Zakarpattia",
       "gender": "female",
@@ -201,7 +201,7 @@
       "position": "Captain"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Richard Adams",
       "region": "Volyn",
       "gender": "male",
@@ -211,7 +211,7 @@
       "position": "Major"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Nancy Hernandez",
       "region": "Kherson",
       "gender": "female",
@@ -221,7 +221,7 @@
       "position": "Lieutenant"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Thomas Lopez",
       "region": "Chernihiv",
       "gender": "male",
@@ -231,7 +231,7 @@
       "position": "Colonel"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Lisa Perez",
       "region": "Ternopil",
       "gender": "female",
@@ -241,7 +241,7 @@
       "position": "General"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "James Jackson",
       "region": "Rivne",
       "gender": "male",
@@ -251,7 +251,7 @@
       "position": "Sergeant"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Margaret Lewis",
       "region": "Chernivtsi",
       "gender": "female",
@@ -261,7 +261,7 @@
       "position": "Captain"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "John Anderson",
       "region": "Ivano-Frankivsk",
       "gender": "male",
@@ -271,7 +271,7 @@
       "position": "Major"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Betty Wright",
       "region": "Kyiv",
       "gender": "female",
@@ -281,7 +281,7 @@
       "position": "Lieutenant"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "George Taylor",
       "region": "Lviv",
       "gender": "male",
@@ -291,7 +291,7 @@
       "position": "Colonel"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Dorothy Martinez",
       "region": "Kharkiv",
       "gender": "female",
@@ -301,7 +301,7 @@
       "position": "General"
     },
         {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Sarah Brown",
       "region": "Zaporizhia",
       "gender": "female",
@@ -311,7 +311,7 @@
       "position": "General"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Robert Lee",
       "region": "Donetsk",
       "gender": "male",
@@ -321,7 +321,7 @@
       "position": "Sergeant"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Linda White",
       "region": "Khmelnytskyi",
       "gender": "female",
@@ -331,7 +331,7 @@
       "position": "Captain"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "William Harris",
       "region": "Zhytomyr",
       "gender": "male",
@@ -341,7 +341,7 @@
       "position": "Major"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Amanda Clark",
       "region": "Ternopil",
       "gender": "female",
@@ -351,7 +351,7 @@
       "position": "Lieutenant"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "James Turner",
       "region": "Rivne",
       "gender": "male",
@@ -361,7 +361,7 @@
       "position": "Colonel"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Jessica Hall",
       "region": "Chernivtsi",
       "gender": "female",
@@ -371,7 +371,7 @@
       "position": "General"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Michael Adams",
       "region": "Ivano-Frankivsk",
       "gender": "male",
@@ -381,7 +381,7 @@
       "position": "Sergeant"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Jennifer Moore",
       "region": "Cherkasy",
       "gender": "female",
@@ -391,7 +391,7 @@
       "position": "Captain"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Christopher Taylor",
       "region": "Poltava",
       "gender": "male",
@@ -401,7 +401,7 @@
       "position": "Major"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Mary Martinez",
       "region": "Sumy",
       "gender": "female",
@@ -411,7 +411,7 @@
       "position": "Lieutenant"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Daniel Garcia",
       "region": "Mykolaiv",
       "gender": "male",
@@ -421,7 +421,7 @@
       "position": "Colonel"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Patricia Rodriguez",
       "region": "Vinnytsia",
       "gender": "female",
@@ -431,7 +431,7 @@
       "position": "General"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Joseph Wilson",
       "region": "Luhansk",
       "gender": "male",
@@ -441,7 +441,7 @@
       "position": "Sergeant"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Karen Hall",
       "region": "Zakarpattia",
       "gender": "female",
@@ -451,7 +451,7 @@
       "position": "Captain"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Richard Adams",
       "region": "Volyn",
       "gender": "male",
@@ -461,7 +461,7 @@
       "position": "Major"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Nancy Hernandez",
       "region": "Kherson",
       "gender": "female",
@@ -471,7 +471,7 @@
       "position": "Lieutenant"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Thomas Lopez",
       "region": "Chernihiv",
       "gender": "male",
@@ -481,7 +481,7 @@
       "position": "Colonel"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Lisa Perez",
       "region": "Ternopil",
       "gender": "female",
@@ -491,7 +491,7 @@
       "position": "General"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "James Jackson",
       "region": "Rivne",
       "gender": "male",
@@ -501,7 +501,7 @@
       "position": "Sergeant"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Margaret Lewis",
       "region": "Chernivtsi",
       "gender": "female",
@@ -511,7 +511,7 @@
       "position": "Captain"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "John Anderson",
       "region": "Ivano-Frankivsk",
       "gender": "male",
@@ -521,7 +521,7 @@
       "position": "Major"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Betty Wright",
       "region": "Kyiv",
       "gender": "female",
@@ -531,7 +531,7 @@
       "position": "Lieutenant"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "George Taylor",
       "region": "Lviv",
       "gender": "male",
@@ -541,7 +541,7 @@
       "position": "Colonel"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Dorothy Martinez",
       "region": "Kharkiv",
       "gender": "female",
@@ -551,7 +551,7 @@
       "position": "General"
     },
         {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Sarah Brown",
       "region": "Zaporizhia",
       "gender": "female",
@@ -561,7 +561,7 @@
       "position": "General"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Robert Lee",
       "region": "Donetsk",
       "gender": "male",
@@ -571,7 +571,7 @@
       "position": "Sergeant"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Linda White",
       "region": "Khmelnytskyi",
       "gender": "female",
@@ -581,7 +581,7 @@
       "position": "Captain"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "William Harris",
       "region": "Zhytomyr",
       "gender": "male",
@@ -591,7 +591,7 @@
       "position": "Major"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Amanda Clark",
       "region": "Ternopil",
       "gender": "female",
@@ -601,7 +601,7 @@
       "position": "Lieutenant"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "James Turner",
       "region": "Rivne",
       "gender": "male",
@@ -611,7 +611,7 @@
       "position": "Colonel"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Jessica Hall",
       "region": "Chernivtsi",
       "gender": "female",
@@ -621,7 +621,7 @@
       "position": "General"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Michael Adams",
       "region": "Ivano-Frankivsk",
       "gender": "male",
@@ -631,7 +631,7 @@
       "position": "Sergeant"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Jennifer Moore",
       "region": "Cherkasy",
       "gender": "female",
@@ -641,7 +641,7 @@
       "position": "Captain"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Christopher Taylor",
       "region": "Poltava",
       "gender": "male",
@@ -651,7 +651,7 @@
       "position": "Major"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Mary Martinez",
       "region": "Sumy",
       "gender": "female",
@@ -661,7 +661,7 @@
       "position": "Lieutenant"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Daniel Garcia",
       "region": "Mykolaiv",
       "gender": "male",
@@ -671,7 +671,7 @@
       "position": "Colonel"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Patricia Rodriguez",
       "region": "Vinnytsia",
       "gender": "female",
@@ -681,7 +681,7 @@
       "position": "General"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Joseph Wilson",
       "region": "Luhansk",
       "gender": "male",
@@ -691,7 +691,7 @@
       "position": "Sergeant"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Karen Hall",
       "region": "Zakarpattia",
       "gender": "female",
@@ -701,7 +701,7 @@
       "position": "Captain"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Richard Adams",
       "region": "Volyn",
       "gender": "male",
@@ -711,7 +711,7 @@
       "position": "Major"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Nancy Hernandez",
       "region": "Kherson",
       "gender": "female",
@@ -721,7 +721,7 @@
       "position": "Lieutenant"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Thomas Lopez",
       "region": "Chernihiv",
       "gender": "male",
@@ -731,7 +731,7 @@
       "position": "Colonel"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Lisa Perez",
       "region": "Ternopil",
       "gender": "female",
@@ -741,7 +741,7 @@
       "position": "General"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "James Jackson",
       "region": "Rivne",
       "gender": "male",
@@ -751,7 +751,7 @@
       "position": "Sergeant"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Margaret Lewis",
       "region": "Chernivtsi",
       "gender": "female",
@@ -761,7 +761,7 @@
       "position": "Captain"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "John Anderson",
       "region": "Ivano-Frankivsk",
       "gender": "male",
@@ -771,7 +771,7 @@
       "position": "Major"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Betty Wright",
       "region": "Kyiv",
       "gender": "female",
@@ -781,7 +781,7 @@
       "position": "Lieutenant"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "George Taylor",
       "region": "Lviv",
       "gender": "male",
@@ -791,7 +791,7 @@
       "position": "Colonel"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Dorothy Martinez",
       "region": "Kharkiv",
       "gender": "female",
@@ -801,7 +801,7 @@
       "position": "General"
     },
     {
-      "image": "image.png",
+      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Dorothy Martinez",
       "region": "Kharkiv",
       "gender": "female",
