@@ -1,8 +1,7 @@
-import io
 import json
+import os
 
 from PIL import Image
-from PIL.ImageOps import crop
 from flask import Flask, send_from_directory, render_template, request
 
 app = Flask(__name__)
@@ -12,23 +11,34 @@ app = Flask(__name__)
 def adminhome():
     return render_template('admin.html')
 
+
 @app.route('/getjson')
 def getjson():
     return send_from_directory('static', "heroes.json")
+
 
 @app.route('/setjson', methods=["POST"])
 def setjson():
     data = json.loads(request.data)
     with open('./static/heroes.json', 'w') as file:
         file.write(json.dumps(data, indent=2))
-    return "none"
+
+    with open('./pages/homepage.html', 'w') as page:
+        page.write(render_template('home.html', data=data))
+    return {'status': 'ok'}
+
 
 @app.route('/')
 def home():
-    with open('./static/heroes.json', 'r') as file:
-        return render_template('home.html', data=json.loads(file.read()))
+    # check if file exists
+    try:
+        with open('./pages/homepage.html', 'r') as page:
+            return page.read()
+    except FileNotFoundError:
+        return "Page not found!"
 
-@app.route('/uploadImage', methods=['POST'])
+
+@app.route('/Images', methods=['POST'])
 def upload_file():
     if 'newImage' not in request.files:
         return 'No file part'
@@ -59,6 +69,17 @@ def upload_file():
         filename = f'./static/photos/{file.filename}'
         new_image.save(filename)
         return filename
+
+
+@app.route('/Images', methods=['DELETE'])
+def delete_file():
+    filename = json.loads(request.data)['filename']
+    try:
+        os.remove(f'./static/photos/{filename}')
+        return {'status': 'ok'}
+    except FileNotFoundError:
+        return {'status': 'error', 'message': 'File not found'}
+
 
 if __name__ == '__main__':
     app.run()
