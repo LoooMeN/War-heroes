@@ -3,8 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+    <script src="{{ url_for('static', filename='js/home.js')}}"></script>
 </head>
 <body>
-    {{ data['heroes'][0]['image'] }}
+    <div class="first_screen_wrapper" style="background-image: url('{{ url_for('static', filename='images/background.png') }}');">
+        <div class="hero_image_wrapper">
+            <img class= "hero_image"src="{{ url_for('static', filename='images/heroImage.png') }}" alt="">
+            <img class="scroll_button" src="{{ url_for('static', filename='images/scroll_button.png') }}" alt="">
+        </div>
+        <img class="oboz_logo" src="{{ url_for('static', filename='images/Obozevatel_Logo.png') }}" alt="">
+    </div>
+    <p>{{ data['heroes'][0]['image'] }}</p>
 </body>
 </html>
