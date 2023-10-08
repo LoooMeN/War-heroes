@@ -53,15 +53,18 @@
             </div>
        </div> 
        <div class="hero_cards">
-            <div class="hero_card">
-                <img src="{{ data['heroes'][0]['image'] }}" alt="">
-                {% set name = data['heroes'][0]['name'].split(' ') %}
-                <h2>{{name[0]}}<br>{{name[1]}}</h2>
-                <p>{{ data['heroes'][0]['region'] }}</p>
-                <p>{{ data['heroes'][0]['position'] }}</p>
+            {% for hero in data %}
+            <div class="hero_card" dateadded="{{hero['date_added']}}" deathdate="{{hero['death_date']}}">
+                <a href="{{ hero['url']}}">
+                    <img src="{{ hero['image'] }}" alt="">
+                    {% set name = hero['name'].split(' ') %}
+                    <h2>{{name[0]}}<br>{{name[1]}}</h2>
+                    <p>{{ hero['region'] }}</p>
+                    <p>{{ hero['position'] }}</p>
+                </a>
             </div>
+            {% endfor %}
        </div>
     </div>
-    <p>{{ data['heroes'][0]['image'] }}</p>
 </body>
 </html>
