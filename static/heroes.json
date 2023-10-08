@@ -799,6 +799,16 @@
       "url": "https://google.com/",
       "date_added": "2023-01-20",
       "position": "General"
+    },
+    {
+      "image": "image.png",
+      "name": "Dorothy Martinez",
+      "region": "Kharkiv",
+      "gender": "female",
+      "death_date": "2023-12-15",
+      "url": "https://google.com/",
+      "date_added": "2023-01-20",
+      "position": "General"
     }
   ]
 }
