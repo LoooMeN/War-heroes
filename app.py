@@ -24,18 +24,20 @@ def setjson():
         file.write(json.dumps(data, indent=2))
 
     with open('./pages/homepage.html', 'w') as page:
-        page.write(render_template('home.html', data=data))
+        page.write(render_template('home.html', data=data['heroes']))
     return {'status': 'ok'}
 
 
 @app.route('/')
 def home():
+    with open('./static/heroes.json', 'r') as file:
+        return render_template('home.html', data=json.loads(file.read())['heroes'])
     # check if file exists
-    try:
-        with open('./pages/homepage.html', 'r') as page:
-            return page.read()
-    except FileNotFoundError:
-        return "Page not found!"
+    # try:
+    #     with open('./pages/homepage.html', 'r') as page:
+    #         return page.read()
+    # except FileNotFoundError:
+    #     return "Page not found!"
 
 
 @app.route('/Images', methods=['POST'])
