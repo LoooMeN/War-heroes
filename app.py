@@ -1,6 +1,5 @@
 import io
 import json
-import PIL
 
 from PIL import Image
 from PIL.ImageOps import crop
@@ -60,11 +59,6 @@ def upload_file():
         filename = f'./static/photos/{file.filename}'
         new_image.save(filename)
         return filename
-
-    # if file:
-    #     filename = f'./static/photos/{file.filename}'
-    #     file.save(filename)
-    #     return filename
 
 if __name__ == '__main__':
     app.run()

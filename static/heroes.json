@@ -1,6 +1,16 @@
 {
   "heroes": [
     {
+      "image": "http://127.0.0.1:5000/static/photos/1922_2023-06-25_PLN_01_02.jpg",
+      "name": "\u0414\u043c\u0438\u0442\u0440\u043e \u0413\u0435\u043d\u0430",
+      "region": "\u0425\u0435\u0440\u0441\u043e\u043d",
+      "gender": "\u0427\u043e\u043b\u043e\u0432\u0456\u043a",
+      "position": "\u041a\u043e\u043c\u0431\u0430\u0442",
+      "death_date": "2023-10-11",
+      "url": "https://google.com",
+      "date_added": "2023-10-08"
+    },
+    {
       "image": "http://127.0.0.1:5000/static/photos/FileStorageNewsGalleryImages%20(1).jpg",
       "name": "4321",
       "region": "",
@@ -27,7 +37,7 @@
       "gender": "male",
       "position": "test position",
       "death_date": "2023-10-12",
-      "url": "male",
+      "url": "44444",
       "date_added": "2023-10-12"
     }
   ]
