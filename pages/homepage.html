@@ -10,10 +10,1436 @@
     <div class="first_screen_wrapper" style="background-image: url('/static/images/background.png');">
         <div class="hero_image_wrapper">
             <img class= "hero_image"src="/static/images/heroImage.png" alt="">
-            <img class="scroll_button" src="/static/images/scroll_button.png" alt="">
+            <a href="#content">
+                <img class="scroll_button" src="/static/images/scroll_button.png" alt="">
+            </a>
         </div>
-        <img class="oboz_logo" src="/static/images/Obozevatel_Logo.png" alt="">
+        <img class="oboz_logo" src="/static/images/Obozevatel_Logo.svg" alt="">
     </div>
-    <p>http://127.0.0.1:5000/static/photos/FileStorageNewsGalleryImages%20(1).jpg</p>
+    <div class="content_wrapper" id="content">
+       <div class="filters_wrapper">
+            <div class="filter_wrapper search">
+                <label for="">Οξψσκ</label>
+                <input class="hero_name_filter" type="text" placeholder="Ββεδ³ςό ³μ'ÿ" id="hero_name_filter">
+                <div class="icon_image_wrapper" onclick="filter(this, 'name')">
+                    <img src="/static/images/search.png" alt="">
+                </div>
+            </div>
+            <div class="filter_wrapper select">
+                <label for="">Ξαλΰρςό</label>
+                <select name="region" id="region_select" onchange="filter(this.value, 'region')">
+                    <option value="all">Βρ³ ξαλΰρς³</option>
+                </select>
+                <img class="select_down_arrow" src="/static/images/down_arrow.svg" alt="">
+            </div>
+            <div class="filter_wrapper select">
+                <label for="">Ρςΰςό</label>
+                <select name="gender" id="gender_select" onchange="filter(this.value, 'gender')">
+                    <option value="all">Ασδό ÿκΰ</option>
+                </select>
+                <img class="select_down_arrow" src="/static/images/down_arrow.svg" alt="">
+            </div>
+            <div class="filter_wrapper datepicker">
+                <label for="">Δΰςΰ β³δ</label>
+                <input id="after_date" type="date" onchange="filterDate()">
+                <div class="icon_image_wrapper">
+                    <img src="/static/images/calendar.svg" alt="">
+                </div>
+            </div>
+            <div class="filter_wrapper datepicker">
+                <label for="">Δΰςΰ δξ</label>
+                <input id="before_date" type="date" onchange="filterDate()">
+                <div class="icon_image_wrapper">
+                    <img src="/static/images/calendar.svg" alt="">
+                </div>
+            </div>
+       </div> 
+       <div class="hero_cards">
+            
+                <div class="hero_card" name="John Doe" dateadded="2023-02-20" deathdate="2023-01-15" gender="male" region="Kyiv">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/camphoto_33463914.jpg" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>John<br>Doe</h2>
+                        <p>Kyiv</p>
+                        <p>Sergeant</p>
+                        <p>2023-01-15</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="Jane Smith" dateadded="2023-04-05" deathdate="2023-03-10" gender="female" region="Lviv">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>Jane<br>Smith</h2>
+                        <p>Lviv</p>
+                        <p>Captain</p>
+                        <p>2023-03-10</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="Mike Johnson" dateadded="2023-06-15" deathdate="2023-05-22" gender="male" region="Kharkiv">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>Mike<br>Johnson</h2>
+                        <p>Kharkiv</p>
+                        <p>Major</p>
+                        <p>2023-05-22</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="Emily Davis" dateadded="2023-08-12" deathdate="2023-07-30" gender="female" region="Odesa">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>Emily<br>Davis</h2>
+                        <p>Odesa</p>
+                        <p>Lieutenant</p>
+                        <p>2023-07-30</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="David Wilson" dateadded="2023-10-25" deathdate="2023-09-18" gender="male" region="Dnipro">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>David<br>Wilson</h2>
+                        <p>Dnipro</p>
+                        <p>Colonel</p>
+                        <p>2023-09-18</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="Sarah Brown" dateadded="2023-12-08" deathdate="2023-11-05" gender="female" region="Zaporizhia">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>Sarah<br>Brown</h2>
+                        <p>Zaporizhia</p>
+                        <p>General</p>
+                        <p>2023-11-05</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="Robert Lee" dateadded="2023-03-10" deathdate="2023-02-28" gender="male" region="Donetsk">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>Robert<br>Lee</h2>
+                        <p>Donetsk</p>
+                        <p>Sergeant</p>
+                        <p>2023-02-28</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="Linda White" dateadded="2023-05-20" deathdate="2023-04-15" gender="female" region="Khmelnytskyi">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>Linda<br>White</h2>
+                        <p>Khmelnytskyi</p>
+                        <p>Captain</p>
+                        <p>2023-04-15</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="William Harris" dateadded="2023-07-03" deathdate="2023-06-30" gender="male" region="Zhytomyr">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>William<br>Harris</h2>
+                        <p>Zhytomyr</p>
+                        <p>Major</p>
+                        <p>2023-06-30</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="Amanda Clark" dateadded="2023-09-17" deathdate="2023-08-14" gender="female" region="Ternopil">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>Amanda<br>Clark</h2>
+                        <p>Ternopil</p>
+                        <p>Lieutenant</p>
+                        <p>2023-08-14</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="James Turner" dateadded="2023-11-05" deathdate="2023-10-01" gender="male" region="Rivne">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>James<br>Turner</h2>
+                        <p>Rivne</p>
+                        <p>Colonel</p>
+                        <p>2023-10-01</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="Jessica Hall" dateadded="2023-01-05" deathdate="2023-12-20" gender="female" region="Chernivtsi">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>Jessica<br>Hall</h2>
+                        <p>Chernivtsi</p>
+                        <p>General</p>
+                        <p>2023-12-20</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="Michael Adams" dateadded="2023-03-20" deathdate="2023-02-15" gender="male" region="Ivano-Frankivsk">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>Michael<br>Adams</h2>
+                        <p>Ivano-Frankivsk</p>
+                        <p>Sergeant</p>
+                        <p>2023-02-15</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="Jennifer Moore" dateadded="2023-05-15" deathdate="2023-04-10" gender="female" region="Cherkasy">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>Jennifer<br>Moore</h2>
+                        <p>Cherkasy</p>
+                        <p>Captain</p>
+                        <p>2023-04-10</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="Christopher Taylor" dateadded="2023-07-30" deathdate="2023-06-25" gender="male" region="Poltava">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>Christopher<br>Taylor</h2>
+                        <p>Poltava</p>
+                        <p>Major</p>
+                        <p>2023-06-25</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="Mary Martinez" dateadded="2023-09-10" deathdate="2023-08-05" gender="female" region="Sumy">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>Mary<br>Martinez</h2>
+                        <p>Sumy</p>
+                        <p>Lieutenant</p>
+                        <p>2023-08-05</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="Daniel Garcia" dateadded="2023-11-25" deathdate="2023-10-20" gender="male" region="Mykolaiv">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>Daniel<br>Garcia</h2>
+                        <p>Mykolaiv</p>
+                        <p>Colonel</p>
+                        <p>2023-10-20</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="Patricia Rodriguez" dateadded="2023-01-01" deathdate="2023-12-30" gender="female" region="Vinnytsia">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>Patricia<br>Rodriguez</h2>
+                        <p>Vinnytsia</p>
+                        <p>General</p>
+                        <p>2023-12-30</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="Joseph Wilson" dateadded="2023-03-15" deathdate="2023-02-10" gender="male" region="Luhansk">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>Joseph<br>Wilson</h2>
+                        <p>Luhansk</p>
+                        <p>Sergeant</p>
+                        <p>2023-02-10</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="Karen Hall" dateadded="2023-05-30" deathdate="2023-04-25" gender="female" region="Zakarpattia">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>Karen<br>Hall</h2>
+                        <p>Zakarpattia</p>
+                        <p>Captain</p>
+                        <p>2023-04-25</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="Richard Adams" dateadded="2023-07-15" deathdate="2023-06-10" gender="male" region="Volyn">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>Richard<br>Adams</h2>
+                        <p>Volyn</p>
+                        <p>Major</p>
+                        <p>2023-06-10</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="Nancy Hernandez" dateadded="2023-09-30" deathdate="2023-08-25" gender="female" region="Kherson">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>Nancy<br>Hernandez</h2>
+                        <p>Kherson</p>
+                        <p>Lieutenant</p>
+                        <p>2023-08-25</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="Thomas Lopez" dateadded="2023-11-15" deathdate="2023-10-10" gender="male" region="Chernihiv">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>Thomas<br>Lopez</h2>
+                        <p>Chernihiv</p>
+                        <p>Colonel</p>
+                        <p>2023-10-10</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="Lisa Perez" dateadded="2023-01-30" deathdate="2023-12-25" gender="female" region="Ternopil">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>Lisa<br>Perez</h2>
+                        <p>Ternopil</p>
+                        <p>General</p>
+                        <p>2023-12-25</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="James Jackson" dateadded="2023-03-10" deathdate="2023-02-05" gender="male" region="Rivne">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>James<br>Jackson</h2>
+                        <p>Rivne</p>
+                        <p>Sergeant</p>
+                        <p>2023-02-05</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="Margaret Lewis" dateadded="2023-05-25" deathdate="2023-04-20" gender="female" region="Chernivtsi">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>Margaret<br>Lewis</h2>
+                        <p>Chernivtsi</p>
+                        <p>Captain</p>
+                        <p>2023-04-20</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="John Anderson" dateadded="2023-07-10" deathdate="2023-06-05" gender="male" region="Ivano-Frankivsk">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>John<br>Anderson</h2>
+                        <p>Ivano-Frankivsk</p>
+                        <p>Major</p>
+                        <p>2023-06-05</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="Betty Wright" dateadded="2023-09-25" deathdate="2023-08-20" gender="female" region="Kyiv">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>Betty<br>Wright</h2>
+                        <p>Kyiv</p>
+                        <p>Lieutenant</p>
+                        <p>2023-08-20</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="George Taylor" dateadded="2023-11-10" deathdate="2023-10-05" gender="male" region="Lviv">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>George<br>Taylor</h2>
+                        <p>Lviv</p>
+                        <p>Colonel</p>
+                        <p>2023-10-05</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="Dorothy Martinez" dateadded="2023-01-20" deathdate="2023-12-15" gender="female" region="Kharkiv">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>Dorothy<br>Martinez</h2>
+                        <p>Kharkiv</p>
+                        <p>General</p>
+                        <p>2023-12-15</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="Sarah Brown" dateadded="2023-12-08" deathdate="2023-11-05" gender="female" region="Zaporizhia">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>Sarah<br>Brown</h2>
+                        <p>Zaporizhia</p>
+                        <p>General</p>
+                        <p>2023-11-05</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="Robert Lee" dateadded="2023-03-10" deathdate="2023-02-28" gender="male" region="Donetsk">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>Robert<br>Lee</h2>
+                        <p>Donetsk</p>
+                        <p>Sergeant</p>
+                        <p>2023-02-28</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="Linda White" dateadded="2023-05-20" deathdate="2023-04-15" gender="female" region="Khmelnytskyi">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>Linda<br>White</h2>
+                        <p>Khmelnytskyi</p>
+                        <p>Captain</p>
+                        <p>2023-04-15</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="William Harris" dateadded="2023-07-03" deathdate="2023-06-30" gender="male" region="Zhytomyr">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>William<br>Harris</h2>
+                        <p>Zhytomyr</p>
+                        <p>Major</p>
+                        <p>2023-06-30</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="Amanda Clark" dateadded="2023-09-17" deathdate="2023-08-14" gender="female" region="Ternopil">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>Amanda<br>Clark</h2>
+                        <p>Ternopil</p>
+                        <p>Lieutenant</p>
+                        <p>2023-08-14</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="James Turner" dateadded="2023-11-05" deathdate="2023-10-01" gender="male" region="Rivne">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>James<br>Turner</h2>
+                        <p>Rivne</p>
+                        <p>Colonel</p>
+                        <p>2023-10-01</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="Jessica Hall" dateadded="2023-01-05" deathdate="2023-12-20" gender="female" region="Chernivtsi">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>Jessica<br>Hall</h2>
+                        <p>Chernivtsi</p>
+                        <p>General</p>
+                        <p>2023-12-20</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="Michael Adams" dateadded="2023-03-20" deathdate="2023-02-15" gender="male" region="Ivano-Frankivsk">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>Michael<br>Adams</h2>
+                        <p>Ivano-Frankivsk</p>
+                        <p>Sergeant</p>
+                        <p>2023-02-15</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="Jennifer Moore" dateadded="2023-05-15" deathdate="2023-04-10" gender="female" region="Cherkasy">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>Jennifer<br>Moore</h2>
+                        <p>Cherkasy</p>
+                        <p>Captain</p>
+                        <p>2023-04-10</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="Christopher Taylor" dateadded="2023-07-30" deathdate="2023-06-25" gender="male" region="Poltava">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>Christopher<br>Taylor</h2>
+                        <p>Poltava</p>
+                        <p>Major</p>
+                        <p>2023-06-25</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="Mary Martinez" dateadded="2023-09-10" deathdate="2023-08-05" gender="female" region="Sumy">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>Mary<br>Martinez</h2>
+                        <p>Sumy</p>
+                        <p>Lieutenant</p>
+                        <p>2023-08-05</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="Daniel Garcia" dateadded="2023-11-25" deathdate="2023-10-20" gender="male" region="Mykolaiv">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>Daniel<br>Garcia</h2>
+                        <p>Mykolaiv</p>
+                        <p>Colonel</p>
+                        <p>2023-10-20</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="Patricia Rodriguez" dateadded="2023-01-01" deathdate="2023-12-30" gender="female" region="Vinnytsia">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>Patricia<br>Rodriguez</h2>
+                        <p>Vinnytsia</p>
+                        <p>General</p>
+                        <p>2023-12-30</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="Joseph Wilson" dateadded="2023-03-15" deathdate="2023-02-10" gender="male" region="Luhansk">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>Joseph<br>Wilson</h2>
+                        <p>Luhansk</p>
+                        <p>Sergeant</p>
+                        <p>2023-02-10</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="Karen Hall" dateadded="2023-05-30" deathdate="2023-04-25" gender="female" region="Zakarpattia">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>Karen<br>Hall</h2>
+                        <p>Zakarpattia</p>
+                        <p>Captain</p>
+                        <p>2023-04-25</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="Richard Adams" dateadded="2023-07-15" deathdate="2023-06-10" gender="male" region="Volyn">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>Richard<br>Adams</h2>
+                        <p>Volyn</p>
+                        <p>Major</p>
+                        <p>2023-06-10</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="Nancy Hernandez" dateadded="2023-09-30" deathdate="2023-08-25" gender="female" region="Kherson">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>Nancy<br>Hernandez</h2>
+                        <p>Kherson</p>
+                        <p>Lieutenant</p>
+                        <p>2023-08-25</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="Thomas Lopez" dateadded="2023-11-15" deathdate="2023-10-10" gender="male" region="Chernihiv">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>Thomas<br>Lopez</h2>
+                        <p>Chernihiv</p>
+                        <p>Colonel</p>
+                        <p>2023-10-10</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="Lisa Perez" dateadded="2023-01-30" deathdate="2023-12-25" gender="female" region="Ternopil">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>Lisa<br>Perez</h2>
+                        <p>Ternopil</p>
+                        <p>General</p>
+                        <p>2023-12-25</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="James Jackson" dateadded="2023-03-10" deathdate="2023-02-05" gender="male" region="Rivne">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>James<br>Jackson</h2>
+                        <p>Rivne</p>
+                        <p>Sergeant</p>
+                        <p>2023-02-05</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="Margaret Lewis" dateadded="2023-05-25" deathdate="2023-04-20" gender="female" region="Chernivtsi">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>Margaret<br>Lewis</h2>
+                        <p>Chernivtsi</p>
+                        <p>Captain</p>
+                        <p>2023-04-20</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="John Anderson" dateadded="2023-07-10" deathdate="2023-06-05" gender="male" region="Ivano-Frankivsk">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>John<br>Anderson</h2>
+                        <p>Ivano-Frankivsk</p>
+                        <p>Major</p>
+                        <p>2023-06-05</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="Betty Wright" dateadded="2023-09-25" deathdate="2023-08-20" gender="female" region="Kyiv">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>Betty<br>Wright</h2>
+                        <p>Kyiv</p>
+                        <p>Lieutenant</p>
+                        <p>2023-08-20</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="George Taylor" dateadded="2023-11-10" deathdate="2023-10-05" gender="male" region="Lviv">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>George<br>Taylor</h2>
+                        <p>Lviv</p>
+                        <p>Colonel</p>
+                        <p>2023-10-05</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="Dorothy Martinez" dateadded="2023-01-20" deathdate="2023-12-15" gender="female" region="Kharkiv">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>Dorothy<br>Martinez</h2>
+                        <p>Kharkiv</p>
+                        <p>General</p>
+                        <p>2023-12-15</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="Sarah Brown" dateadded="2023-12-08" deathdate="2023-11-05" gender="female" region="Zaporizhia">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>Sarah<br>Brown</h2>
+                        <p>Zaporizhia</p>
+                        <p>General</p>
+                        <p>2023-11-05</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="Robert Lee" dateadded="2023-03-10" deathdate="2023-02-28" gender="male" region="Donetsk">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>Robert<br>Lee</h2>
+                        <p>Donetsk</p>
+                        <p>Sergeant</p>
+                        <p>2023-02-28</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="Linda White" dateadded="2023-05-20" deathdate="2023-04-15" gender="female" region="Khmelnytskyi">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>Linda<br>White</h2>
+                        <p>Khmelnytskyi</p>
+                        <p>Captain</p>
+                        <p>2023-04-15</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="William Harris" dateadded="2023-07-03" deathdate="2023-06-30" gender="male" region="Zhytomyr">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>William<br>Harris</h2>
+                        <p>Zhytomyr</p>
+                        <p>Major</p>
+                        <p>2023-06-30</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="Amanda Clark" dateadded="2023-09-17" deathdate="2023-08-14" gender="female" region="Ternopil">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>Amanda<br>Clark</h2>
+                        <p>Ternopil</p>
+                        <p>Lieutenant</p>
+                        <p>2023-08-14</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="James Turner" dateadded="2023-11-05" deathdate="2023-10-01" gender="male" region="Rivne">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>James<br>Turner</h2>
+                        <p>Rivne</p>
+                        <p>Colonel</p>
+                        <p>2023-10-01</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="Jessica Hall" dateadded="2023-01-05" deathdate="2023-12-20" gender="female" region="Chernivtsi">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>Jessica<br>Hall</h2>
+                        <p>Chernivtsi</p>
+                        <p>General</p>
+                        <p>2023-12-20</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="Michael Adams" dateadded="2023-03-20" deathdate="2023-02-15" gender="male" region="Ivano-Frankivsk">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>Michael<br>Adams</h2>
+                        <p>Ivano-Frankivsk</p>
+                        <p>Sergeant</p>
+                        <p>2023-02-15</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="Jennifer Moore" dateadded="2023-05-15" deathdate="2023-04-10" gender="female" region="Cherkasy">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>Jennifer<br>Moore</h2>
+                        <p>Cherkasy</p>
+                        <p>Captain</p>
+                        <p>2023-04-10</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="Christopher Taylor" dateadded="2023-07-30" deathdate="2023-06-25" gender="male" region="Poltava">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>Christopher<br>Taylor</h2>
+                        <p>Poltava</p>
+                        <p>Major</p>
+                        <p>2023-06-25</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="Mary Martinez" dateadded="2023-09-10" deathdate="2023-08-05" gender="female" region="Sumy">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>Mary<br>Martinez</h2>
+                        <p>Sumy</p>
+                        <p>Lieutenant</p>
+                        <p>2023-08-05</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="Daniel Garcia" dateadded="2023-11-25" deathdate="2023-10-20" gender="male" region="Mykolaiv">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>Daniel<br>Garcia</h2>
+                        <p>Mykolaiv</p>
+                        <p>Colonel</p>
+                        <p>2023-10-20</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="Patricia Rodriguez" dateadded="2023-01-01" deathdate="2023-12-30" gender="female" region="Vinnytsia">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>Patricia<br>Rodriguez</h2>
+                        <p>Vinnytsia</p>
+                        <p>General</p>
+                        <p>2023-12-30</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="Joseph Wilson" dateadded="2023-03-15" deathdate="2023-02-10" gender="male" region="Luhansk">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>Joseph<br>Wilson</h2>
+                        <p>Luhansk</p>
+                        <p>Sergeant</p>
+                        <p>2023-02-10</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="Karen Hall" dateadded="2023-05-30" deathdate="2023-04-25" gender="female" region="Zakarpattia">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>Karen<br>Hall</h2>
+                        <p>Zakarpattia</p>
+                        <p>Captain</p>
+                        <p>2023-04-25</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="Richard Adams" dateadded="2023-07-15" deathdate="2023-06-10" gender="male" region="Volyn">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>Richard<br>Adams</h2>
+                        <p>Volyn</p>
+                        <p>Major</p>
+                        <p>2023-06-10</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="Nancy Hernandez" dateadded="2023-09-30" deathdate="2023-08-25" gender="female" region="Kherson">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>Nancy<br>Hernandez</h2>
+                        <p>Kherson</p>
+                        <p>Lieutenant</p>
+                        <p>2023-08-25</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="Thomas Lopez" dateadded="2023-11-15" deathdate="2023-10-10" gender="male" region="Chernihiv">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>Thomas<br>Lopez</h2>
+                        <p>Chernihiv</p>
+                        <p>Colonel</p>
+                        <p>2023-10-10</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="Lisa Perez" dateadded="2023-01-30" deathdate="2023-12-25" gender="female" region="Ternopil">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>Lisa<br>Perez</h2>
+                        <p>Ternopil</p>
+                        <p>General</p>
+                        <p>2023-12-25</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="James Jackson" dateadded="2023-03-10" deathdate="2023-02-05" gender="male" region="Rivne">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>James<br>Jackson</h2>
+                        <p>Rivne</p>
+                        <p>Sergeant</p>
+                        <p>2023-02-05</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="Margaret Lewis" dateadded="2023-05-25" deathdate="2023-04-20" gender="female" region="Chernivtsi">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>Margaret<br>Lewis</h2>
+                        <p>Chernivtsi</p>
+                        <p>Captain</p>
+                        <p>2023-04-20</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="John Anderson" dateadded="2023-07-10" deathdate="2023-06-05" gender="male" region="Ivano-Frankivsk">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>John<br>Anderson</h2>
+                        <p>Ivano-Frankivsk</p>
+                        <p>Major</p>
+                        <p>2023-06-05</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="Betty Wright" dateadded="2023-09-25" deathdate="2023-08-20" gender="female" region="Kyiv">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>Betty<br>Wright</h2>
+                        <p>Kyiv</p>
+                        <p>Lieutenant</p>
+                        <p>2023-08-20</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="George Taylor" dateadded="2023-11-10" deathdate="2023-10-05" gender="male" region="Lviv">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>George<br>Taylor</h2>
+                        <p>Lviv</p>
+                        <p>Colonel</p>
+                        <p>2023-10-05</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="Dorothy Martinez" dateadded="2023-01-20" deathdate="2023-12-15" gender="female" region="Kharkiv">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>Dorothy<br>Martinez</h2>
+                        <p>Kharkiv</p>
+                        <p>General</p>
+                        <p>2023-12-15</p>
+                    </a>
+                </div>
+            
+                <div class="hero_card" name="Dorothy Martinez" dateadded="2023-01-20" deathdate="2023-12-15" gender="female" region="Kharkiv">
+                    <a href="https://google.com/">
+                        <div class="hero_image_wrapper">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <div class="details">
+                                <p class="details_text">Δεςΰλόν³ψε</p>
+                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <h2>Dorothy<br>Martinez</h2>
+                        <p>Kharkiv</p>
+                        <p>General</p>
+                        <p>2023-12-15</p>
+                    </a>
+                </div>
+            
+       </div>
+    </div>
+    <div class="footer">
+        <div class="footer_wrapper">
+            <img src="/static/images/Obozevatel_Logo.svg" alt="">
+            <p>2023</p>
+        </div>
+    </div>
 </body>
 </html>

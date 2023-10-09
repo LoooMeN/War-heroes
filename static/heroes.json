@@ -1,814 +1,814 @@
 {
   "heroes": [
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:5000/static/photos/camphoto_33463914.jpg",
       "name": "John Doe",
       "region": "Kyiv",
       "gender": "male",
+      "position": "Sergeant",
       "death_date": "2023-01-15",
       "url": "https://google.com/",
-      "date_added": "2023-02-20",
-      "position": "Sergeant"
+      "date_added": "2023-02-20"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Jane Smith",
       "region": "Lviv",
       "gender": "female",
+      "position": "Captain",
       "death_date": "2023-03-10",
       "url": "https://google.com/",
-      "date_added": "2023-04-05",
-      "position": "Captain"
+      "date_added": "2023-04-05"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Mike Johnson",
       "region": "Kharkiv",
       "gender": "male",
+      "position": "Major",
       "death_date": "2023-05-22",
       "url": "https://google.com/",
-      "date_added": "2023-06-15",
-      "position": "Major"
+      "date_added": "2023-06-15"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Emily Davis",
       "region": "Odesa",
       "gender": "female",
+      "position": "Lieutenant",
       "death_date": "2023-07-30",
       "url": "https://google.com/",
-      "date_added": "2023-08-12",
-      "position": "Lieutenant"
+      "date_added": "2023-08-12"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "David Wilson",
       "region": "Dnipro",
       "gender": "male",
+      "position": "Colonel",
       "death_date": "2023-09-18",
       "url": "https://google.com/",
-      "date_added": "2023-10-25",
-      "position": "Colonel"
+      "date_added": "2023-10-25"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Sarah Brown",
       "region": "Zaporizhia",
       "gender": "female",
+      "position": "General",
       "death_date": "2023-11-05",
       "url": "https://google.com/",
-      "date_added": "2023-12-08",
-      "position": "General"
+      "date_added": "2023-12-08"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Robert Lee",
       "region": "Donetsk",
       "gender": "male",
+      "position": "Sergeant",
       "death_date": "2023-02-28",
       "url": "https://google.com/",
-      "date_added": "2023-03-10",
-      "position": "Sergeant"
+      "date_added": "2023-03-10"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Linda White",
       "region": "Khmelnytskyi",
       "gender": "female",
+      "position": "Captain",
       "death_date": "2023-04-15",
       "url": "https://google.com/",
-      "date_added": "2023-05-20",
-      "position": "Captain"
+      "date_added": "2023-05-20"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "William Harris",
       "region": "Zhytomyr",
       "gender": "male",
+      "position": "Major",
       "death_date": "2023-06-30",
       "url": "https://google.com/",
-      "date_added": "2023-07-03",
-      "position": "Major"
+      "date_added": "2023-07-03"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Amanda Clark",
       "region": "Ternopil",
       "gender": "female",
+      "position": "Lieutenant",
       "death_date": "2023-08-14",
       "url": "https://google.com/",
-      "date_added": "2023-09-17",
-      "position": "Lieutenant"
+      "date_added": "2023-09-17"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "James Turner",
       "region": "Rivne",
       "gender": "male",
+      "position": "Colonel",
       "death_date": "2023-10-01",
       "url": "https://google.com/",
-      "date_added": "2023-11-05",
-      "position": "Colonel"
+      "date_added": "2023-11-05"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Jessica Hall",
       "region": "Chernivtsi",
       "gender": "female",
+      "position": "General",
       "death_date": "2023-12-20",
       "url": "https://google.com/",
-      "date_added": "2023-01-05",
-      "position": "General"
+      "date_added": "2023-01-05"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Michael Adams",
       "region": "Ivano-Frankivsk",
       "gender": "male",
+      "position": "Sergeant",
       "death_date": "2023-02-15",
       "url": "https://google.com/",
-      "date_added": "2023-03-20",
-      "position": "Sergeant"
+      "date_added": "2023-03-20"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Jennifer Moore",
       "region": "Cherkasy",
       "gender": "female",
+      "position": "Captain",
       "death_date": "2023-04-10",
       "url": "https://google.com/",
-      "date_added": "2023-05-15",
-      "position": "Captain"
+      "date_added": "2023-05-15"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Christopher Taylor",
       "region": "Poltava",
       "gender": "male",
+      "position": "Major",
       "death_date": "2023-06-25",
       "url": "https://google.com/",
-      "date_added": "2023-07-30",
-      "position": "Major"
+      "date_added": "2023-07-30"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Mary Martinez",
       "region": "Sumy",
       "gender": "female",
+      "position": "Lieutenant",
       "death_date": "2023-08-05",
       "url": "https://google.com/",
-      "date_added": "2023-09-10",
-      "position": "Lieutenant"
+      "date_added": "2023-09-10"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Daniel Garcia",
       "region": "Mykolaiv",
       "gender": "male",
+      "position": "Colonel",
       "death_date": "2023-10-20",
       "url": "https://google.com/",
-      "date_added": "2023-11-25",
-      "position": "Colonel"
+      "date_added": "2023-11-25"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Patricia Rodriguez",
       "region": "Vinnytsia",
       "gender": "female",
+      "position": "General",
       "death_date": "2023-12-30",
       "url": "https://google.com/",
-      "date_added": "2023-01-01",
-      "position": "General"
+      "date_added": "2023-01-01"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Joseph Wilson",
       "region": "Luhansk",
       "gender": "male",
+      "position": "Sergeant",
       "death_date": "2023-02-10",
       "url": "https://google.com/",
-      "date_added": "2023-03-15",
-      "position": "Sergeant"
+      "date_added": "2023-03-15"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Karen Hall",
       "region": "Zakarpattia",
       "gender": "female",
+      "position": "Captain",
       "death_date": "2023-04-25",
       "url": "https://google.com/",
-      "date_added": "2023-05-30",
-      "position": "Captain"
+      "date_added": "2023-05-30"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Richard Adams",
       "region": "Volyn",
       "gender": "male",
+      "position": "Major",
       "death_date": "2023-06-10",
       "url": "https://google.com/",
-      "date_added": "2023-07-15",
-      "position": "Major"
+      "date_added": "2023-07-15"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Nancy Hernandez",
       "region": "Kherson",
       "gender": "female",
+      "position": "Lieutenant",
       "death_date": "2023-08-25",
       "url": "https://google.com/",
-      "date_added": "2023-09-30",
-      "position": "Lieutenant"
+      "date_added": "2023-09-30"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Thomas Lopez",
       "region": "Chernihiv",
       "gender": "male",
+      "position": "Colonel",
       "death_date": "2023-10-10",
       "url": "https://google.com/",
-      "date_added": "2023-11-15",
-      "position": "Colonel"
+      "date_added": "2023-11-15"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Lisa Perez",
       "region": "Ternopil",
       "gender": "female",
+      "position": "General",
       "death_date": "2023-12-25",
       "url": "https://google.com/",
-      "date_added": "2023-01-30",
-      "position": "General"
+      "date_added": "2023-01-30"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "James Jackson",
       "region": "Rivne",
       "gender": "male",
+      "position": "Sergeant",
       "death_date": "2023-02-05",
       "url": "https://google.com/",
-      "date_added": "2023-03-10",
-      "position": "Sergeant"
+      "date_added": "2023-03-10"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Margaret Lewis",
       "region": "Chernivtsi",
       "gender": "female",
+      "position": "Captain",
       "death_date": "2023-04-20",
       "url": "https://google.com/",
-      "date_added": "2023-05-25",
-      "position": "Captain"
+      "date_added": "2023-05-25"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "John Anderson",
       "region": "Ivano-Frankivsk",
       "gender": "male",
+      "position": "Major",
       "death_date": "2023-06-05",
       "url": "https://google.com/",
-      "date_added": "2023-07-10",
-      "position": "Major"
+      "date_added": "2023-07-10"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Betty Wright",
       "region": "Kyiv",
       "gender": "female",
+      "position": "Lieutenant",
       "death_date": "2023-08-20",
       "url": "https://google.com/",
-      "date_added": "2023-09-25",
-      "position": "Lieutenant"
+      "date_added": "2023-09-25"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "George Taylor",
       "region": "Lviv",
       "gender": "male",
+      "position": "Colonel",
       "death_date": "2023-10-05",
       "url": "https://google.com/",
-      "date_added": "2023-11-10",
-      "position": "Colonel"
+      "date_added": "2023-11-10"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Dorothy Martinez",
       "region": "Kharkiv",
       "gender": "female",
+      "position": "General",
       "death_date": "2023-12-15",
       "url": "https://google.com/",
-      "date_added": "2023-01-20",
-      "position": "General"
+      "date_added": "2023-01-20"
     },
-        {
+    {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Sarah Brown",
       "region": "Zaporizhia",
       "gender": "female",
+      "position": "General",
       "death_date": "2023-11-05",
       "url": "https://google.com/",
-      "date_added": "2023-12-08",
-      "position": "General"
+      "date_added": "2023-12-08"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Robert Lee",
       "region": "Donetsk",
       "gender": "male",
+      "position": "Sergeant",
       "death_date": "2023-02-28",
       "url": "https://google.com/",
-      "date_added": "2023-03-10",
-      "position": "Sergeant"
+      "date_added": "2023-03-10"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Linda White",
       "region": "Khmelnytskyi",
       "gender": "female",
+      "position": "Captain",
       "death_date": "2023-04-15",
       "url": "https://google.com/",
-      "date_added": "2023-05-20",
-      "position": "Captain"
+      "date_added": "2023-05-20"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "William Harris",
       "region": "Zhytomyr",
       "gender": "male",
+      "position": "Major",
       "death_date": "2023-06-30",
       "url": "https://google.com/",
-      "date_added": "2023-07-03",
-      "position": "Major"
+      "date_added": "2023-07-03"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Amanda Clark",
       "region": "Ternopil",
       "gender": "female",
+      "position": "Lieutenant",
       "death_date": "2023-08-14",
       "url": "https://google.com/",
-      "date_added": "2023-09-17",
-      "position": "Lieutenant"
+      "date_added": "2023-09-17"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "James Turner",
       "region": "Rivne",
       "gender": "male",
+      "position": "Colonel",
       "death_date": "2023-10-01",
       "url": "https://google.com/",
-      "date_added": "2023-11-05",
-      "position": "Colonel"
+      "date_added": "2023-11-05"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Jessica Hall",
       "region": "Chernivtsi",
       "gender": "female",
+      "position": "General",
       "death_date": "2023-12-20",
       "url": "https://google.com/",
-      "date_added": "2023-01-05",
-      "position": "General"
+      "date_added": "2023-01-05"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Michael Adams",
       "region": "Ivano-Frankivsk",
       "gender": "male",
+      "position": "Sergeant",
       "death_date": "2023-02-15",
       "url": "https://google.com/",
-      "date_added": "2023-03-20",
-      "position": "Sergeant"
+      "date_added": "2023-03-20"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Jennifer Moore",
       "region": "Cherkasy",
       "gender": "female",
+      "position": "Captain",
       "death_date": "2023-04-10",
       "url": "https://google.com/",
-      "date_added": "2023-05-15",
-      "position": "Captain"
+      "date_added": "2023-05-15"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Christopher Taylor",
       "region": "Poltava",
       "gender": "male",
+      "position": "Major",
       "death_date": "2023-06-25",
       "url": "https://google.com/",
-      "date_added": "2023-07-30",
-      "position": "Major"
+      "date_added": "2023-07-30"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Mary Martinez",
       "region": "Sumy",
       "gender": "female",
+      "position": "Lieutenant",
       "death_date": "2023-08-05",
       "url": "https://google.com/",
-      "date_added": "2023-09-10",
-      "position": "Lieutenant"
+      "date_added": "2023-09-10"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Daniel Garcia",
       "region": "Mykolaiv",
       "gender": "male",
+      "position": "Colonel",
       "death_date": "2023-10-20",
       "url": "https://google.com/",
-      "date_added": "2023-11-25",
-      "position": "Colonel"
+      "date_added": "2023-11-25"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Patricia Rodriguez",
       "region": "Vinnytsia",
       "gender": "female",
+      "position": "General",
       "death_date": "2023-12-30",
       "url": "https://google.com/",
-      "date_added": "2023-01-01",
-      "position": "General"
+      "date_added": "2023-01-01"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Joseph Wilson",
       "region": "Luhansk",
       "gender": "male",
+      "position": "Sergeant",
       "death_date": "2023-02-10",
       "url": "https://google.com/",
-      "date_added": "2023-03-15",
-      "position": "Sergeant"
+      "date_added": "2023-03-15"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Karen Hall",
       "region": "Zakarpattia",
       "gender": "female",
+      "position": "Captain",
       "death_date": "2023-04-25",
       "url": "https://google.com/",
-      "date_added": "2023-05-30",
-      "position": "Captain"
+      "date_added": "2023-05-30"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Richard Adams",
       "region": "Volyn",
       "gender": "male",
+      "position": "Major",
       "death_date": "2023-06-10",
       "url": "https://google.com/",
-      "date_added": "2023-07-15",
-      "position": "Major"
+      "date_added": "2023-07-15"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Nancy Hernandez",
       "region": "Kherson",
       "gender": "female",
+      "position": "Lieutenant",
       "death_date": "2023-08-25",
       "url": "https://google.com/",
-      "date_added": "2023-09-30",
-      "position": "Lieutenant"
+      "date_added": "2023-09-30"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Thomas Lopez",
       "region": "Chernihiv",
       "gender": "male",
+      "position": "Colonel",
       "death_date": "2023-10-10",
       "url": "https://google.com/",
-      "date_added": "2023-11-15",
-      "position": "Colonel"
+      "date_added": "2023-11-15"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Lisa Perez",
       "region": "Ternopil",
       "gender": "female",
+      "position": "General",
       "death_date": "2023-12-25",
       "url": "https://google.com/",
-      "date_added": "2023-01-30",
-      "position": "General"
+      "date_added": "2023-01-30"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "James Jackson",
       "region": "Rivne",
       "gender": "male",
+      "position": "Sergeant",
       "death_date": "2023-02-05",
       "url": "https://google.com/",
-      "date_added": "2023-03-10",
-      "position": "Sergeant"
+      "date_added": "2023-03-10"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Margaret Lewis",
       "region": "Chernivtsi",
       "gender": "female",
+      "position": "Captain",
       "death_date": "2023-04-20",
       "url": "https://google.com/",
-      "date_added": "2023-05-25",
-      "position": "Captain"
+      "date_added": "2023-05-25"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "John Anderson",
       "region": "Ivano-Frankivsk",
       "gender": "male",
+      "position": "Major",
       "death_date": "2023-06-05",
       "url": "https://google.com/",
-      "date_added": "2023-07-10",
-      "position": "Major"
+      "date_added": "2023-07-10"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Betty Wright",
       "region": "Kyiv",
       "gender": "female",
+      "position": "Lieutenant",
       "death_date": "2023-08-20",
       "url": "https://google.com/",
-      "date_added": "2023-09-25",
-      "position": "Lieutenant"
+      "date_added": "2023-09-25"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "George Taylor",
       "region": "Lviv",
       "gender": "male",
+      "position": "Colonel",
       "death_date": "2023-10-05",
       "url": "https://google.com/",
-      "date_added": "2023-11-10",
-      "position": "Colonel"
+      "date_added": "2023-11-10"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Dorothy Martinez",
       "region": "Kharkiv",
       "gender": "female",
+      "position": "General",
       "death_date": "2023-12-15",
       "url": "https://google.com/",
-      "date_added": "2023-01-20",
-      "position": "General"
+      "date_added": "2023-01-20"
     },
-        {
+    {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Sarah Brown",
       "region": "Zaporizhia",
       "gender": "female",
+      "position": "General",
       "death_date": "2023-11-05",
       "url": "https://google.com/",
-      "date_added": "2023-12-08",
-      "position": "General"
+      "date_added": "2023-12-08"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Robert Lee",
       "region": "Donetsk",
       "gender": "male",
+      "position": "Sergeant",
       "death_date": "2023-02-28",
       "url": "https://google.com/",
-      "date_added": "2023-03-10",
-      "position": "Sergeant"
+      "date_added": "2023-03-10"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Linda White",
       "region": "Khmelnytskyi",
       "gender": "female",
+      "position": "Captain",
       "death_date": "2023-04-15",
       "url": "https://google.com/",
-      "date_added": "2023-05-20",
-      "position": "Captain"
+      "date_added": "2023-05-20"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "William Harris",
       "region": "Zhytomyr",
       "gender": "male",
+      "position": "Major",
       "death_date": "2023-06-30",
       "url": "https://google.com/",
-      "date_added": "2023-07-03",
-      "position": "Major"
+      "date_added": "2023-07-03"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Amanda Clark",
       "region": "Ternopil",
       "gender": "female",
+      "position": "Lieutenant",
       "death_date": "2023-08-14",
       "url": "https://google.com/",
-      "date_added": "2023-09-17",
-      "position": "Lieutenant"
+      "date_added": "2023-09-17"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "James Turner",
       "region": "Rivne",
       "gender": "male",
+      "position": "Colonel",
       "death_date": "2023-10-01",
       "url": "https://google.com/",
-      "date_added": "2023-11-05",
-      "position": "Colonel"
+      "date_added": "2023-11-05"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Jessica Hall",
       "region": "Chernivtsi",
       "gender": "female",
+      "position": "General",
       "death_date": "2023-12-20",
       "url": "https://google.com/",
-      "date_added": "2023-01-05",
-      "position": "General"
+      "date_added": "2023-01-05"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Michael Adams",
       "region": "Ivano-Frankivsk",
       "gender": "male",
+      "position": "Sergeant",
       "death_date": "2023-02-15",
       "url": "https://google.com/",
-      "date_added": "2023-03-20",
-      "position": "Sergeant"
+      "date_added": "2023-03-20"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Jennifer Moore",
       "region": "Cherkasy",
       "gender": "female",
+      "position": "Captain",
       "death_date": "2023-04-10",
       "url": "https://google.com/",
-      "date_added": "2023-05-15",
-      "position": "Captain"
+      "date_added": "2023-05-15"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Christopher Taylor",
       "region": "Poltava",
       "gender": "male",
+      "position": "Major",
       "death_date": "2023-06-25",
       "url": "https://google.com/",
-      "date_added": "2023-07-30",
-      "position": "Major"
+      "date_added": "2023-07-30"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Mary Martinez",
       "region": "Sumy",
       "gender": "female",
+      "position": "Lieutenant",
       "death_date": "2023-08-05",
       "url": "https://google.com/",
-      "date_added": "2023-09-10",
-      "position": "Lieutenant"
+      "date_added": "2023-09-10"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Daniel Garcia",
       "region": "Mykolaiv",
       "gender": "male",
+      "position": "Colonel",
       "death_date": "2023-10-20",
       "url": "https://google.com/",
-      "date_added": "2023-11-25",
-      "position": "Colonel"
+      "date_added": "2023-11-25"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Patricia Rodriguez",
       "region": "Vinnytsia",
       "gender": "female",
+      "position": "General",
       "death_date": "2023-12-30",
       "url": "https://google.com/",
-      "date_added": "2023-01-01",
-      "position": "General"
+      "date_added": "2023-01-01"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Joseph Wilson",
       "region": "Luhansk",
       "gender": "male",
+      "position": "Sergeant",
       "death_date": "2023-02-10",
       "url": "https://google.com/",
-      "date_added": "2023-03-15",
-      "position": "Sergeant"
+      "date_added": "2023-03-15"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Karen Hall",
       "region": "Zakarpattia",
       "gender": "female",
+      "position": "Captain",
       "death_date": "2023-04-25",
       "url": "https://google.com/",
-      "date_added": "2023-05-30",
-      "position": "Captain"
+      "date_added": "2023-05-30"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Richard Adams",
       "region": "Volyn",
       "gender": "male",
+      "position": "Major",
       "death_date": "2023-06-10",
       "url": "https://google.com/",
-      "date_added": "2023-07-15",
-      "position": "Major"
+      "date_added": "2023-07-15"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Nancy Hernandez",
       "region": "Kherson",
       "gender": "female",
+      "position": "Lieutenant",
       "death_date": "2023-08-25",
       "url": "https://google.com/",
-      "date_added": "2023-09-30",
-      "position": "Lieutenant"
+      "date_added": "2023-09-30"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Thomas Lopez",
       "region": "Chernihiv",
       "gender": "male",
+      "position": "Colonel",
       "death_date": "2023-10-10",
       "url": "https://google.com/",
-      "date_added": "2023-11-15",
-      "position": "Colonel"
+      "date_added": "2023-11-15"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Lisa Perez",
       "region": "Ternopil",
       "gender": "female",
+      "position": "General",
       "death_date": "2023-12-25",
       "url": "https://google.com/",
-      "date_added": "2023-01-30",
-      "position": "General"
+      "date_added": "2023-01-30"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "James Jackson",
       "region": "Rivne",
       "gender": "male",
+      "position": "Sergeant",
       "death_date": "2023-02-05",
       "url": "https://google.com/",
-      "date_added": "2023-03-10",
-      "position": "Sergeant"
+      "date_added": "2023-03-10"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Margaret Lewis",
       "region": "Chernivtsi",
       "gender": "female",
+      "position": "Captain",
       "death_date": "2023-04-20",
       "url": "https://google.com/",
-      "date_added": "2023-05-25",
-      "position": "Captain"
+      "date_added": "2023-05-25"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "John Anderson",
       "region": "Ivano-Frankivsk",
       "gender": "male",
+      "position": "Major",
       "death_date": "2023-06-05",
       "url": "https://google.com/",
-      "date_added": "2023-07-10",
-      "position": "Major"
+      "date_added": "2023-07-10"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Betty Wright",
       "region": "Kyiv",
       "gender": "female",
+      "position": "Lieutenant",
       "death_date": "2023-08-20",
       "url": "https://google.com/",
-      "date_added": "2023-09-25",
-      "position": "Lieutenant"
+      "date_added": "2023-09-25"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "George Taylor",
       "region": "Lviv",
       "gender": "male",
+      "position": "Colonel",
       "death_date": "2023-10-05",
       "url": "https://google.com/",
-      "date_added": "2023-11-10",
-      "position": "Colonel"
+      "date_added": "2023-11-10"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Dorothy Martinez",
       "region": "Kharkiv",
       "gender": "female",
+      "position": "General",
       "death_date": "2023-12-15",
       "url": "https://google.com/",
-      "date_added": "2023-01-20",
-      "position": "General"
+      "date_added": "2023-01-20"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "Dorothy Martinez",
       "region": "Kharkiv",
       "gender": "female",
+      "position": "General",
       "death_date": "2023-12-15",
       "url": "https://google.com/",
-      "date_added": "2023-01-20",
-      "position": "General"
+      "date_added": "2023-01-20"
     }
   ]
 }

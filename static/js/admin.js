@@ -25,7 +25,6 @@ function filter() {
             } else if (name.value.toLowerCase().includes(searchString)) {
                 parent.classList.remove('hidden')
             }
-                
         })
     })
 }
@@ -54,7 +53,7 @@ function populateAdmin(data) {
                         <img src="`+elem['image']+`" alt="">
                         <div class="image_button_wrapper">
                             <p>142x142</p>
-                            <label>завантажити<input class="image_input" type="file" accept="image/jpeg, image/png, image/jpg"></label>
+                            <label>завантажити<input class="image_input" type="file" accept="image/jpeg, image/png, image/jpg" onchange="saveImage(this)"></label>
                         </div>
                     </div>
                     <!-- name -->

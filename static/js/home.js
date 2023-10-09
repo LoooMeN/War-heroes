@@ -53,7 +53,6 @@ function filterDate() {
             }
         })
     } else {
-        console.log("hi")
         heroCards.forEach((hero) => {
             let deathDate = Date.parse(hero.getAttribute("deathdate"));
 

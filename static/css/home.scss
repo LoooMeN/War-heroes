@@ -73,6 +73,7 @@ html {
     .filters_wrapper {
         display: grid;
         grid-template-columns: 3fr 2fr 1.5fr 1fr 1fr;
+        justify-content: center;
         grid-gap: 10px;
         margin-bottom: 50px;
 
@@ -254,6 +255,10 @@ html {
 
 
 @media (max-width: 999px) {
+    .first_screen_wrapper {
+        min-height: unset;
+    }
+
     .content_wrapper {
         width: 632px;
 
@@ -279,6 +284,10 @@ html {
 
 
   @media (max-width: 671px) {
+    .first_screen_wrapper {
+        min-height: unset;
+    }
+    
     .content_wrapper {
         width: 335px;
 
