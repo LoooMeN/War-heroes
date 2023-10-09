@@ -20,35 +20,35 @@
        <div class="filters_wrapper">
             <div class="filter_wrapper search">
                 <label for="">Пошук</label>
-                <input class="hero_name_filter" type="text" placeholder="Введіть ім'я" id="hero_name_filter">
-                <div class="icon_image_wrapper" onclick="filter(this, 'name')">
+                <input filtrable="true" name="name" class="hero_name_filter" type="text" placeholder="Введіть ім'я" id="hero_name_filter">
+                <div class="icon_image_wrapper" onclick="filter1()">
                     <img src="{{ url_for('static', filename='images/search.png') }}" alt="">
                 </div>
             </div>
             <div class="filter_wrapper select">
                 <label for="">Область</label>
-                <select name="region" id="region_select" onchange="filter(this.value, 'region')">
+                <select filtrable="true" name="region" id="region_select" onchange="filter1()">
                     <option value="all">Всі області</option>
                 </select>
                 <img class="select_down_arrow" src="{{ url_for('static', filename='images/down_arrow.svg') }}" alt="">
             </div>
             <div class="filter_wrapper select">
                 <label for="">Стать</label>
-                <select name="gender" id="gender_select" onchange="filter(this.value, 'gender')">
+                <select filtrable="true" name="gender" id="gender_select" onchange="filter1()">
                     <option value="all">Будь яка</option>
                 </select>
                 <img class="select_down_arrow" src="{{ url_for('static', filename='images/down_arrow.svg') }}" alt="">
             </div>
             <div class="filter_wrapper datepicker">
                 <label for="">Дата від</label>
-                <input id="after_date" type="date" onchange="filterDate()">
+                <input filtrable="true" name="after_date" id="after_date" type="date" onchange="filter1()">
                 <div class="icon_image_wrapper">
                     <img src="{{ url_for('static', filename='images/calendar.svg') }}" alt="">
                 </div>
             </div>
             <div class="filter_wrapper datepicker">
                 <label for="">Дата до</label>
-                <input id="before_date" type="date" onchange="filterDate()">
+                <input filtrable="true" name="before_date" id="before_date" type="date" onchange="filter1()">
                 <div class="icon_image_wrapper">
                     <img src="{{ url_for('static', filename='images/calendar.svg') }}" alt="">
                 </div>

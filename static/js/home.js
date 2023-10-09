@@ -28,59 +28,70 @@ function fillSelect(element, attribute) {
     }
 }
 
-function filterDate() {
-    const afterDate = Date.parse(document.querySelector('#after_date').value);
-    const beforeDate = Date.parse(document.querySelector('#before_date').value);
+function filter1() {
+    let inputs = document.querySelectorAll('[filtrable="true"]')
+    let values = {}
 
-    if (isNaN(afterDate)) {
-        heroCards.forEach((hero) => {
-            let deathDate = Date.parse(hero.getAttribute("deathdate"));
+    inputs.forEach(elem => {
+        values[elem.name] = elem.value
+    })
 
-            if (deathDate > beforeDate && !hero.classList.contains('hidden')) {
-                hero.classList.add('hidden')
-            } else if (deathDate < beforeDate) {
-                hero.classList.remove('hidden')
-            }
-        })
-    } else if (isNaN(beforeDate)) {
-        heroCards.forEach((hero) => {
-            let deathDate = Date.parse(hero.getAttribute("deathdate"));
+    console.log(values)
 
-            if (deathDate < afterDate && !hero.classList.contains('hidden')) {
-                hero.classList.add('hidden')
-            } else if (deathDate > afterDate) {
-                hero.classList.remove('hidden')
-            }
-        })
-    } else {
-        heroCards.forEach((hero) => {
-            let deathDate = Date.parse(hero.getAttribute("deathdate"));
-
-            if ((deathDate < afterDate ||
-             deathDate > beforeDate) &&
-              !hero.classList.contains('hidden')) {
-                hero.classList.add('hidden')
-            } else if (deathDate > afterDate &&
-            deathDate < beforeDate &&
-             hero.classList.contains('hidden')) {
-                hero.classList.remove('hidden')
-            }
-        })
-    }
-
-    console.log(isNaN(beforeDate))
+    heroCards.forEach((hero) => {
+        if (checkAcceptability(hero, filter(hero, values['name'], 'name')) == false)
+            return;
+        if (checkAcceptability(hero, filter(hero, values['region'], 'region')) == false)
+            return;
+        if (checkAcceptability(hero, filter(hero, values['gender'], 'gender')) == false)
+            return;
+        if (checkAcceptability(hero, filterDate(hero)) == false)
+            return;
+    })
 }
 
-function filter(value, attribute) {
-    if (attribute == "name")
-        value = value.parentNode.querySelector('input').value
-
-    value = value.toLowerCase();
-    heroCards.forEach((hero) => {
-        if (!hero.getAttribute(attribute).toLowerCase().includes(value) && !hero.classList.contains('hidden')) {
+function checkAcceptability(hero, value) {
+    if (!value) {
+        if (!hero.classList.contains('hidden'))
             hero.classList.add('hidden')
-        } else if (hero.getAttribute(attribute).toLowerCase().includes(value) || value == "all") {
-            hero.classList.remove('hidden')
+        return false
+    } else if (value) {
+        hero.classList.remove('hidden')
+        return true
+    }
+}
+
+function filterDate(hero) {
+    const afterDate = Date.parse(document.querySelector('#after_date').value);
+    const beforeDate = Date.parse(document.querySelector('#before_date').value);
+    let deathDate = Date.parse(hero.getAttribute("deathdate"));
+
+    if (isNaN(afterDate) && isNaN(beforeDate)) {
+        return true
+    } else if (isNaN(afterDate)) {
+        if (deathDate > beforeDate && !hero.classList.contains('hidden')) {
+            return false
+        } else if (deathDate < beforeDate) {
+            return true
         }
-    })
+    } else if (isNaN(beforeDate)) {
+        if (deathDate < afterDate && !hero.classList.contains('hidden')) {
+            return false
+        } else if (deathDate > afterDate) {
+            return true
+        }
+    } else {
+        return (deathDate >= afterDate && deathDate <= beforeDate)
+    }
+}
+
+function filter(hero, value, attribute) {
+    value = value.toLowerCase();
+    if (value == "all" || value == "")
+        return true;
+
+    if (attribute == 'name')
+        return hero.getAttribute(attribute).toLowerCase().includes(value);
+    else
+        return hero.getAttribute(attribute).toLowerCase() == value;
 }
