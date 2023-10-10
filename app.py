@@ -3,6 +3,7 @@ import os
 import uuid
 
 from PIL import Image
+from waitress import serve
 from flask import Flask, send_from_directory, render_template, request, redirect, make_response
 
 app = Flask(__name__)
@@ -117,4 +118,5 @@ def login():
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0')
+    serve(app, host='0.0.0.0', port=80, url_scheme='https')
