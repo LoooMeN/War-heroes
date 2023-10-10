@@ -27,14 +27,14 @@
 .main_wrapper form label {
   margin: 10px 0 5px 0;
 }
-.main_wrapper form input {
+.main_wrapper form input, .main_wrapper form password {
   background-color: unset;
   border: 1px solid teal;
   outline: none;
   padding: 7px 15px;
   border-radius: 7px;
 }
-.main_wrapper form input::placeholder {
+.main_wrapper form input::placeholder, .main_wrapper form password::placeholder {
   color: teal;
 }
 .main_wrapper form button {
