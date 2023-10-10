@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -21,44 +23,50 @@ html {
 .main_wrapper {
     width: 100vw;
     min-height: 100vh;
-    background-color: beige;
+    background-color: rgba(0, 0, 0, 0.27);
+    background-image: url('../images/admin_background.webp');
+    background-size: contain;
     display: flex;
     justify-content: center;
     box-sizing: border-box;
 
     .content_wrapper {
-        width: 80%;
+        width: 70%;
         min-width: 325px;
-        background-color: white;
+        background-color: rgba(255, 255, 255, 0.677);
         padding: 20px 20px;
+
+        h1 {
+            margin-bottom: 10px;
+        }
         
         .filter_wrapper {
-            padding: 20px 0;
+            padding: 20px 20px;
             position: sticky;
             top: 0;
             z-index: 100;
             background-color: white;
             display: flex;
             justify-content: space-between;
+            margin-bottom: 10px;
 
             button {
                 background-color: greenyellow;
                 padding: 3px 5px;
+                border: 2px solid green;
+                padding: 5px 10px;
             }
         }
 
         .items_wrapper {
             display: grid;
-            // height: 100%;
             grid-template-columns: repeat(auto-fill, 300px);
             grid-gap: 10px;
             margin: 0 0 20px 0;
-            // overflow-y: scroll;
 
 
             .item_wrapper {
                 border: 1px solid black;
-                // background-color: red;
                 padding: 10px;
                 width: 100%;
                 min-width: 300px;
@@ -66,7 +74,6 @@ html {
                 position: relative;
 
                 .image_select {
-                    // width: 100px;
                     display: flex;
                     box-sizing: border-box;
                     margin-bottom: 5px;
@@ -110,9 +117,5 @@ html {
                 }
             }
         }
-    }
-
-    h1 {
-        font-family: "Open Sans"
     }
 }
