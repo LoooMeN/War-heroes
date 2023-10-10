@@ -102,6 +102,7 @@ html {
                 font-size: 13px;
                 box-sizing: border-box;
                 height: 36px;
+                width: 100%;
             }
 
             select {
@@ -118,6 +119,10 @@ html {
                 right: 12px;
                 bottom: 10px;
                 pointer-events: none;
+            }
+
+            #before_date, #after_date {
+                padding-right: 0;
             }
 
             .hero_name_filter {
@@ -149,6 +154,7 @@ html {
         display: grid;
         width: 100%;
         grid-template-columns: repeat(6, 160px);
+        justify-content: center;
 
         .hero_card {
             padding: 10px;

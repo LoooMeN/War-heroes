@@ -2,9 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+    <script src="{{ url_for('static', filename='js/admin.js')}}"></script>
     <title>LOGIN!</title>
 </head>
 <body>
-
+    <div class="main_wrapper">
+        <form action="{{ url_for('login') }}" method="post">
+            <h1>Логін в адмінку</h1>
+            <label for="username">Ім'я користувача</label>
+            <input type="text" id="username" placeholder="Lesia Gasich">
+            <label for="password">Пароль</label>
+            <input type="text" id="password">
+            <button>ЗАЙТИ</button>
+        </form>
+    </div>
+    {% if error %}
+        <div class="error_window">
+            {{error}}
+        </div>
+    {% endif %}
 </body>
 </html>

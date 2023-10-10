@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+  color: rgb(97, 156, 156);
+}
+
+.main_wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(153deg, rgb(2, 0, 36) 0%, rgb(9, 9, 121) 35%, rgb(0, 212, 255) 100%);
+}
+.main_wrapper form {
+  width: 335px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  border-radius: 10px;
+  padding: 10px;
+}
+.main_wrapper form label {
+  margin: 10px 0 5px 0;
+}
+.main_wrapper form input {
+  background-color: unset;
+  border: 1px solid teal;
+  outline: none;
+  padding: 7px 15px;
+  border-radius: 7px;
+}
+.main_wrapper form input::placeholder {
+  color: teal;
+}
+.main_wrapper form button {
+  outline: none;
+  border: 1px solid teal;
+  background-color: unset;
+  padding: 10px 0;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+.main_wrapper .error_window {
+  border: 2px solid red;
+  border-radius: 15px;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  max-width: 300px;
+}
