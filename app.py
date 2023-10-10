@@ -1,7 +1,6 @@
 import json
 import os
 import uuid
-import logging
 
 from PIL import Image
 from waitress import serve
@@ -27,10 +26,10 @@ def getjson():
 @app.route('/setjson', methods=["POST"])
 def setjson():
     data = json.loads(request.data)
-    with open('./static/heroes.json', 'w') as file:
+    with open('./static/heroes.json', 'w', encoding='utf-8') as file:
         file.write(json.dumps(data, indent=2))
 
-    with open('./pages/homepage.html', 'w') as page:
+    with open('./pages/homepage.html', 'w', encoding='utf-8') as page:
         page.write(render_template('home.html', data=data['heroes']))
     return {'status': 'ok'}
 
@@ -40,18 +39,20 @@ def favicon():
 
 @app.route('/')
 def home():
-    with open('./static/heroes.json', 'r') as file:
-        return render_template('home.html', data=json.loads(file.read())['heroes'])
-
-    # try:
-    #     with open('./pages/homepage.html', 'r') as page:
-    #         return page.read()
-    # except FileNotFoundError:
-    #     return "Page not found!"
+    # with open('./static/heroes.json', 'r', encoding='utf-8') as file:
+    #     return render_template('home.html', data=json.loads(file.read())['heroes'])
+    try:
+        with open('./pages/homepage.html', 'r', encoding='utf-8') as page:
+            return page.read()
+    except FileNotFoundError:
+        return "Page not found!"
 
 
 @app.route('/Images', methods=['POST'])
 def upload_file():
+    if request.cookies.get('admin') != SECRET_TOKEN:
+        return {'status': 'error', 'message': 'You are not an admin'}
+
     if 'newImage' not in request.files:
         return 'No file part'
 
@@ -86,6 +87,9 @@ def upload_file():
 
 @app.route('/Images', methods=['DELETE'])
 def delete_file():
+    if request.cookies.get('admin') != SECRET_TOKEN:
+        return {'status': 'error', 'message': 'You are not an admin'}
+
     file_path = request.args.get('filePath')
     if file_path is None:
         return {'status': 'error', 'message': 'No file path'}
@@ -104,18 +108,11 @@ def delete_file():
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
-        print(request.form['username'])
-        if request.form['username'] == 'Lesya' and request.form['password'] == 'Admin123':
-            resp = make_response(redirect('/admin_for_lesia'))
+        print(request.form)
+        if request.form.get('username') == 'Lesya' and request.form.get('password') == 'Admin123':
+            resp = make_response(redirect('/admin_panel'))
             resp.set_cookie('admin', SECRET_TOKEN, max_age=60 * 60 * 24 * 365)  # 1 year
             return resp
         else:
             return render_template('login.html', error='Wrong username or password')
     return render_template('login.html')
-
-
-if __name__ == '__main__':
-    logger = logging.getLogger('waitress')
-    logger.setLevel(logging.INFO)
-    # app.run()
-    serve(app, listen='127.0.0.1:8080', url_scheme='https')
