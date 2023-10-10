@@ -12,9 +12,9 @@
         <form action="{{ url_for('login') }}" method="post">
             <h1>Логін в адмінку</h1>
             <label for="username">Ім'я користувача</label>
-            <input type="text" id="username" placeholder="Lesia Gasich">
+            <input type="text" id="username" name="username" placeholder="Lesia Gasich">
             <label for="password">Пароль</label>
-            <input type="text" id="password">
+            <input type="text" id="password" name="password">
             <button>ЗАЙТИ</button>
         </form>
     </div>

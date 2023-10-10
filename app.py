@@ -39,18 +39,20 @@ def favicon():
 
 @app.route('/')
 def home():
-    with open('./static/heroes.json', 'r', encoding='utf-8') as file:
-        return render_template('home.html', data=json.loads(file.read())['heroes'])
-
-    # try:
-    #     with open('./pages/homepage.html', 'r') as page:
-    #         return page.read()
-    # except FileNotFoundError:
-    #     return "Page not found!"
+    # with open('./static/heroes.json', 'r', encoding='utf-8') as file:
+    #     return render_template('home.html', data=json.loads(file.read())['heroes'])
+    try:
+        with open('./pages/homepage.html', 'r', encoding='utf-8') as page:
+            return page.read()
+    except FileNotFoundError:
+        return "Page not found!"
 
 
 @app.route('/Images', methods=['POST'])
 def upload_file():
+    if request.cookies.get('admin') != SECRET_TOKEN:
+        return {'status': 'error', 'message': 'You are not an admin'}
+
     if 'newImage' not in request.files:
         return 'No file part'
 
@@ -85,6 +87,9 @@ def upload_file():
 
 @app.route('/Images', methods=['DELETE'])
 def delete_file():
+    if request.cookies.get('admin') != SECRET_TOKEN:
+        return {'status': 'error', 'message': 'You are not an admin'}
+
     file_path = request.args.get('filePath')
     if file_path is None:
         return {'status': 'error', 'message': 'No file path'}
@@ -103,9 +108,9 @@ def delete_file():
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
-        print(request.form['username'])
-        if request.form['username'] == 'Lesya' and request.form['password'] == 'Admin123':
-            resp = make_response(redirect('/admin_for_lesia'))
+        print(request.form)
+        if request.form.get('username') == 'Lesya' and request.form.get('password') == 'Admin123':
+            resp = make_response(redirect('/admin_panel'))
             resp.set_cookie('admin', SECRET_TOKEN, max_age=60 * 60 * 24 * 365)  # 1 year
             return resp
         else:
