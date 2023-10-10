@@ -12,11 +12,15 @@ SECRET_TOKEN = 'e0380cca-93ba-409d-9d3e-d38287964a94'
 
 @app.route('/admin_for_lesia')
 def adminhome():
-    if request.cookies.get('admin') == SECRET_TOKEN:
-        return render_template('admin.html')
-    else:
-        return redirect('/login')
+    # if request.cookies.get('admin') == SECRET_TOKEN:
+    return render_template('admin.html')
+    # else:
+    #     return redirect('/login')
 
+
+# @app.route('/login')
+# def login():
+#     return render_template('login.html')
 
 @app.route('/getjson')
 def getjson():
