@@ -31,10 +31,10 @@ def getjson():
 @app.route('/setjson', methods=["POST"])
 def setjson():
     data = json.loads(request.data)
-    with open('./static/heroes.json', 'w') as file:
+    with open('./static/heroes.json', 'w', encoding='utf-8') as file:
         file.write(json.dumps(data, indent=2))
 
-    with open('./pages/homepage.html', 'w') as page:
+    with open('./pages/homepage.html', 'w', encoding='utf-8') as page:
         page.write(render_template('home.html', data=data['heroes']))
     return {'status': 'ok'}
 
@@ -44,7 +44,7 @@ def favicon():
 
 @app.route('/')
 def home():
-    with open('./static/heroes.json', 'r') as file:
+    with open('./static/heroes.json', 'r', encoding='utf-8') as file:
         return render_template('home.html', data=json.loads(file.read())['heroes'])
 
     # try:
@@ -115,8 +115,3 @@ def login():
         else:
             return render_template('login.html', error='Wrong username or password')
     return render_template('login.html')
-
-
-if __name__ == '__main__':
-    app.run(host='0.0.0.0')
-    serve(app, host='0.0.0.0', port=80, url_scheme='https')
