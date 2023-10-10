@@ -1,5 +1,9 @@
 let heroCards = 0;
 
+window.addEventListener('load', () => {
+    gofilter()
+})
+
 window.addEventListener("load", function() {
     heroCards = document.querySelectorAll('.hero_card');
     const regionSelect = document.querySelector('#region_select');
@@ -8,6 +12,15 @@ window.addEventListener("load", function() {
     fillSelect(regionSelect, "region")
     fillSelect(genderSelect, "gender")
 })
+
+function gofilter() {
+    const genderSelect = document.querySelector('#hero_name_filter');
+
+    genderSelect.addEventListener('keydown', (event) => {
+        if (event.key == "Enter")
+            filter1()
+    })
+}
 
 function fillSelect(element, attribute) {
     let list = [];

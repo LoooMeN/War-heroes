@@ -15,6 +15,7 @@ button {
 
 html {
   min-width: 325px;
+  overflow-x: hidden;
 }
 
 .main_wrapper {
@@ -23,6 +24,7 @@ html {
   background-color: beige;
   display: flex;
   justify-content: center;
+  box-sizing: border-box;
 }
 .main_wrapper .content_wrapper {
   width: 80%;

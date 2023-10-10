@@ -105,6 +105,7 @@ function saveImage(upload) {
         method: "POST",
         body: formData
     }).then(response => response.text())
+        // .then(fetch('delete-image', { method: "POST", body: image.src }))
         .then(data => image.src = data)
 }
 
