@@ -101,13 +101,6 @@ def delete_file():
 def login():
     if request.method == 'POST':
         if request.form['username'] == 'Lesya' and request.form['password'] == 'Admin123':
-            # set Admin cookie
-            # return redirect to /admin_for_lesia
-
-            # write token in next line
-
-            token = ''
-
             resp = make_response(redirect('/admin_for_lesia'))
             resp.set_cookie('admin', SECRET_TOKEN, max_age=60 * 60 * 24 * 365)  # 1 year
             return resp
