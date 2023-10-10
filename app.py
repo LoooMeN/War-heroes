@@ -1,6 +1,7 @@
 import json
 import os
 import uuid
+import logging
 
 from PIL import Image
 from waitress import serve
@@ -118,4 +119,6 @@ def login():
 
 
 if __name__ == '__main__':
+    logger = logging.getLogger('waitress')
+    logger.setLevel(logging.INFO)
     app.run()
