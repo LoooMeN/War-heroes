@@ -1,7 +1,7 @@
 {
   "heroes": [
     {
-      "image": "http://127.0.0.1:5000/static/photos/camphoto_33463914.jpg",
+      "image": "http://127.0.0.1:8080/static/photos/camphoto_33463914.jpg",
       "name": "John Doe",
       "region": "Kyiv",
       "gender": "male",
@@ -11,17 +11,17 @@
       "date_added": "2023-02-20"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/ec9a9a01-66ec-4e84-8e21-0e63c18d6b2d.jpg",
+      "image": "http://127.0.0.1:8080/static/photos/9517a6c5-9f7b-4d86-bd80-03efca3382bb.jpg",
       "name": "Jane Smith",
       "region": "Lviv",
-      "gender": "female",
+      "gender": "sex robot",
       "position": "Captain",
       "death_date": "2023-03-10",
       "url": "https://google.com/",
       "date_added": "2023-04-05"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/ImiDaily.png",
+      "image": "http://127.0.0.1:8080/static/photos/4ef49608-1e47-4fd3-8054-1867253d1765.jpg",
       "name": "Mike Johnson",
       "region": "Kharkiv",
       "gender": "male",
@@ -31,7 +31,7 @@
       "date_added": "2023-06-15"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/1b6c4f19-899c-4ae6-97e9-04cda8876eea.jpg",
       "name": "David Wilson",
       "region": "Dnipro",
       "gender": "male",
@@ -41,7 +41,7 @@
       "date_added": "2023-10-25"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "Robert Lee",
       "region": "Donetsk",
       "gender": "male",
@@ -51,7 +51,7 @@
       "date_added": "2023-03-10"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "Linda White",
       "region": "Khmelnytskyi",
       "gender": "female",
@@ -61,7 +61,7 @@
       "date_added": "2023-05-20"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "William Harris",
       "region": "Zhytomyr",
       "gender": "male",
@@ -71,7 +71,7 @@
       "date_added": "2023-07-03"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "Amanda Clark",
       "region": "Ternopil",
       "gender": "female",
@@ -81,7 +81,7 @@
       "date_added": "2023-09-17"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "James Turner",
       "region": "Rivne",
       "gender": "male",
@@ -91,7 +91,7 @@
       "date_added": "2023-11-05"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "Jessica Hall",
       "region": "Chernivtsi",
       "gender": "female",
@@ -101,7 +101,7 @@
       "date_added": "2023-01-05"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "Michael Adams",
       "region": "Ivano-Frankivsk",
       "gender": "male",
@@ -111,7 +111,7 @@
       "date_added": "2023-03-20"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "Jennifer Moore",
       "region": "Cherkasy",
       "gender": "female",
@@ -121,7 +121,7 @@
       "date_added": "2023-05-15"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "Christopher Taylor",
       "region": "Poltava",
       "gender": "male",
@@ -131,7 +131,7 @@
       "date_added": "2023-07-30"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "Mary Martinez",
       "region": "Sumy",
       "gender": "female",
@@ -141,7 +141,7 @@
       "date_added": "2023-09-10"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "Daniel Garcia",
       "region": "Mykolaiv",
       "gender": "male",
@@ -151,7 +151,7 @@
       "date_added": "2023-11-25"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "Patricia Rodriguez",
       "region": "Vinnytsia",
       "gender": "female",
@@ -161,7 +161,7 @@
       "date_added": "2023-01-01"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "Joseph Wilson",
       "region": "Luhansk",
       "gender": "male",
@@ -171,7 +171,7 @@
       "date_added": "2023-03-15"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "Karen Hall",
       "region": "Zakarpattia",
       "gender": "female",
@@ -181,7 +181,7 @@
       "date_added": "2023-05-30"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "Richard Adams",
       "region": "Volyn",
       "gender": "male",
@@ -191,7 +191,7 @@
       "date_added": "2023-07-15"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "Nancy Hernandez",
       "region": "Kherson",
       "gender": "female",
@@ -201,7 +201,7 @@
       "date_added": "2023-09-30"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "Thomas Lopez",
       "region": "Chernihiv",
       "gender": "male",
@@ -211,7 +211,7 @@
       "date_added": "2023-11-15"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "Lisa Perez",
       "region": "Ternopil",
       "gender": "female",
@@ -221,7 +221,7 @@
       "date_added": "2023-01-30"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "James Jackson",
       "region": "Rivne",
       "gender": "male",
@@ -231,7 +231,7 @@
       "date_added": "2023-03-10"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "Margaret Lewis",
       "region": "Chernivtsi",
       "gender": "female",
@@ -241,7 +241,7 @@
       "date_added": "2023-05-25"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "John Anderson",
       "region": "Ivano-Frankivsk",
       "gender": "male",
@@ -251,7 +251,7 @@
       "date_added": "2023-07-10"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "Betty Wright",
       "region": "Kyiv",
       "gender": "female",
@@ -261,7 +261,7 @@
       "date_added": "2023-09-25"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "George Taylor",
       "region": "Lviv",
       "gender": "male",
@@ -271,7 +271,7 @@
       "date_added": "2023-11-10"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "Dorothy Martinez",
       "region": "Kharkiv",
       "gender": "female",
@@ -281,7 +281,7 @@
       "date_added": "2023-01-20"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "Sarah Brown",
       "region": "Zaporizhia",
       "gender": "female",
@@ -291,7 +291,7 @@
       "date_added": "2023-12-08"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "Robert Lee",
       "region": "Donetsk",
       "gender": "male",
@@ -301,7 +301,7 @@
       "date_added": "2023-03-10"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "Linda White",
       "region": "Khmelnytskyi",
       "gender": "female",
@@ -311,7 +311,7 @@
       "date_added": "2023-05-20"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "William Harris",
       "region": "Zhytomyr",
       "gender": "male",
@@ -321,7 +321,7 @@
       "date_added": "2023-07-03"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "Amanda Clark",
       "region": "Ternopil",
       "gender": "female",
@@ -331,7 +331,7 @@
       "date_added": "2023-09-17"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "James Turner",
       "region": "Rivne",
       "gender": "male",
@@ -341,7 +341,7 @@
       "date_added": "2023-11-05"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "Jessica Hall",
       "region": "Chernivtsi",
       "gender": "female",
@@ -351,7 +351,7 @@
       "date_added": "2023-01-05"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "Michael Adams",
       "region": "Ivano-Frankivsk",
       "gender": "male",
@@ -361,7 +361,7 @@
       "date_added": "2023-03-20"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "Jennifer Moore",
       "region": "Cherkasy",
       "gender": "female",
@@ -371,7 +371,7 @@
       "date_added": "2023-05-15"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "Christopher Taylor",
       "region": "Poltava",
       "gender": "male",
@@ -381,7 +381,7 @@
       "date_added": "2023-07-30"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "Mary Martinez",
       "region": "Sumy",
       "gender": "female",
@@ -391,7 +391,7 @@
       "date_added": "2023-09-10"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "Daniel Garcia",
       "region": "Mykolaiv",
       "gender": "male",
@@ -401,7 +401,7 @@
       "date_added": "2023-11-25"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "Patricia Rodriguez",
       "region": "Vinnytsia",
       "gender": "female",
@@ -411,7 +411,7 @@
       "date_added": "2023-01-01"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "Joseph Wilson",
       "region": "Luhansk",
       "gender": "male",
@@ -421,7 +421,7 @@
       "date_added": "2023-03-15"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "Karen Hall",
       "region": "Zakarpattia",
       "gender": "female",
@@ -431,7 +431,7 @@
       "date_added": "2023-05-30"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "Richard Adams",
       "region": "Volyn",
       "gender": "male",
@@ -441,7 +441,7 @@
       "date_added": "2023-07-15"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "Nancy Hernandez",
       "region": "Kherson",
       "gender": "female",
@@ -451,7 +451,7 @@
       "date_added": "2023-09-30"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "Thomas Lopez",
       "region": "Chernihiv",
       "gender": "male",
@@ -461,7 +461,7 @@
       "date_added": "2023-11-15"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "Lisa Perez",
       "region": "Ternopil",
       "gender": "female",
@@ -471,7 +471,7 @@
       "date_added": "2023-01-30"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "James Jackson",
       "region": "Rivne",
       "gender": "male",
@@ -481,7 +481,7 @@
       "date_added": "2023-03-10"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "Margaret Lewis",
       "region": "Chernivtsi",
       "gender": "female",
@@ -491,7 +491,7 @@
       "date_added": "2023-05-25"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "John Anderson",
       "region": "Ivano-Frankivsk",
       "gender": "male",
@@ -501,7 +501,7 @@
       "date_added": "2023-07-10"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "Betty Wright",
       "region": "Kyiv",
       "gender": "female",
@@ -511,7 +511,7 @@
       "date_added": "2023-09-25"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "George Taylor",
       "region": "Lviv",
       "gender": "male",
@@ -521,7 +521,7 @@
       "date_added": "2023-11-10"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "Dorothy Martinez",
       "region": "Kharkiv",
       "gender": "female",
@@ -531,7 +531,7 @@
       "date_added": "2023-01-20"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "Sarah Brown",
       "region": "Zaporizhia",
       "gender": "female",
@@ -541,7 +541,7 @@
       "date_added": "2023-12-08"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "Robert Lee",
       "region": "Donetsk",
       "gender": "male",
@@ -551,7 +551,7 @@
       "date_added": "2023-03-10"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "Linda White",
       "region": "Khmelnytskyi",
       "gender": "female",
@@ -561,7 +561,7 @@
       "date_added": "2023-05-20"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "William Harris",
       "region": "Zhytomyr",
       "gender": "male",
@@ -571,7 +571,7 @@
       "date_added": "2023-07-03"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "Amanda Clark",
       "region": "Ternopil",
       "gender": "female",
@@ -581,7 +581,7 @@
       "date_added": "2023-09-17"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "James Turner",
       "region": "Rivne",
       "gender": "male",
@@ -591,7 +591,7 @@
       "date_added": "2023-11-05"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "Jessica Hall",
       "region": "Chernivtsi",
       "gender": "female",
@@ -601,7 +601,7 @@
       "date_added": "2023-01-05"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "Michael Adams",
       "region": "Ivano-Frankivsk",
       "gender": "male",
@@ -611,7 +611,7 @@
       "date_added": "2023-03-20"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "Jennifer Moore",
       "region": "Cherkasy",
       "gender": "female",
@@ -621,7 +621,7 @@
       "date_added": "2023-05-15"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "Christopher Taylor",
       "region": "Poltava",
       "gender": "male",
@@ -631,7 +631,7 @@
       "date_added": "2023-07-30"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "Mary Martinez",
       "region": "Sumy",
       "gender": "female",
@@ -641,7 +641,7 @@
       "date_added": "2023-09-10"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "Daniel Garcia",
       "region": "Mykolaiv",
       "gender": "male",
@@ -651,7 +651,7 @@
       "date_added": "2023-11-25"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "Patricia Rodriguez",
       "region": "Vinnytsia",
       "gender": "female",
@@ -661,7 +661,7 @@
       "date_added": "2023-01-01"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "Joseph Wilson",
       "region": "Luhansk",
       "gender": "male",
@@ -671,7 +671,7 @@
       "date_added": "2023-03-15"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "Karen Hall",
       "region": "Zakarpattia",
       "gender": "female",
@@ -681,7 +681,7 @@
       "date_added": "2023-05-30"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "Richard Adams",
       "region": "Volyn",
       "gender": "male",
@@ -691,7 +691,7 @@
       "date_added": "2023-07-15"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "Nancy Hernandez",
       "region": "Kherson",
       "gender": "female",
@@ -701,7 +701,7 @@
       "date_added": "2023-09-30"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "Thomas Lopez",
       "region": "Chernihiv",
       "gender": "male",
@@ -711,7 +711,7 @@
       "date_added": "2023-11-15"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "Lisa Perez",
       "region": "Ternopil",
       "gender": "female",
@@ -721,7 +721,7 @@
       "date_added": "2023-01-30"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "James Jackson",
       "region": "Rivne",
       "gender": "male",
@@ -731,7 +731,7 @@
       "date_added": "2023-03-10"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "Margaret Lewis",
       "region": "Chernivtsi",
       "gender": "female",
@@ -741,7 +741,7 @@
       "date_added": "2023-05-25"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "John Anderson",
       "region": "Ivano-Frankivsk",
       "gender": "male",
@@ -751,7 +751,7 @@
       "date_added": "2023-07-10"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "Betty Wright",
       "region": "Kyiv",
       "gender": "female",
@@ -761,7 +761,7 @@
       "date_added": "2023-09-25"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "George Taylor",
       "region": "Lviv",
       "gender": "male",
@@ -771,7 +771,7 @@
       "date_added": "2023-11-10"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "Dorothy Martinez",
       "region": "Kharkiv",
       "gender": "female",
@@ -781,7 +781,7 @@
       "date_added": "2023-01-20"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:8080/static/photos/placeholder.png",
       "name": "Dorothy Martinez",
       "region": "Kharkiv",
       "gender": "female",

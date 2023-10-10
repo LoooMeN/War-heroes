@@ -28,12 +28,15 @@ def setjson():
         page.write(render_template('home.html', data=data['heroes']))
     return {'status': 'ok'}
 
+@app.route('/favicon.ico')
+def favicon():
+    return send_from_directory('static', 'images/favicon.png')
 
 @app.route('/')
 def home():
     with open('./static/heroes.json', 'r') as file:
         return render_template('home.html', data=json.loads(file.read())['heroes'])
-    # check if file exists
+
     # try:
     #     with open('./pages/homepage.html', 'r') as page:
     #         return page.read()

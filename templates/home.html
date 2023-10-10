@@ -2,8 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+    <title>Сторінка пам'яті героїв війни | Obozrevatel</title>
+    <meta name="description" content="Сторінка присвячена пам'яті героїв війни, що хоробро боронять нашу країну | Obozrevatel">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Сторінка пам'яті героїв війни | Obozrevatel">
+    <meta property="og:description" content="Сторінка присвячена пам'яті героїв війни, що хоробро боронять нашу країну | Obozrevatel">
+    <meta property="og:site_name" content="WAR HEROES OBOZREVATEL">
+    <meta property="og:image" content="{{ url_for('static', filename='images/social.jpg')}}">
+    <meta property="og:image:type" content="image/jpg">
+    <meta property="og:image:width" content="2010px">
+    <meta property="og:image:height" content="1050px">
+    <meta property="og:url" content="{{ url_for('home') }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Сторінка пам'яті героїв війни | Obozrevatel">
+    <meta name="twitter:description" content="Сторінка присвячена пам'яті героїв війни, що хоробро боронять нашу країну | Obozrevatel">
+    <meta name="twitter:image" content="{{ url_for('static', filename='images/social.jpg')}}">
+    <meta name="twitter:site" content="@obozrevatel_ua">
+    <meta name="twitter:dnt" content="on">
+    <link rel="canonical" href="{{ url_for('home') }}">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/favicon.svg')}}">
     <script src="{{ url_for('static', filename='js/home.js')}}"></script>
 </head>
 <body>

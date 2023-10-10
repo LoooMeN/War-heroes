@@ -50,7 +50,7 @@ function populateAdmin(data) {
 
         const item = `
                     <div class="image_select">
-                        <img src="`+elem['image']+`" alt="">
+                        <img src="/static`+ elem['image'].split('/static')[1] +`" alt="">
                         <div class="image_button_wrapper">
                             <p>142x142</p>
                             <label>завантажити<input class="image_input" type="file" accept="image/jpeg, image/png, image/jpg" onchange="saveImage(this)"></label>
