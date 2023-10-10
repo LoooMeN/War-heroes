@@ -121,4 +121,5 @@ def login():
 if __name__ == '__main__':
     logger = logging.getLogger('waitress')
     logger.setLevel(logging.INFO)
-    app.run()
+    # app.run()
+    serve(app, listen='127.0.0.1:8080', url_scheme='https')
