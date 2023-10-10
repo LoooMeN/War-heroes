@@ -95,6 +95,7 @@ html {
   font-size: 13px;
   box-sizing: border-box;
   height: 36px;
+  width: 100%;
 }
 .content_wrapper .filters_wrapper .filter_wrapper select {
   appearance: none;
@@ -108,6 +109,9 @@ html {
   right: 12px;
   bottom: 10px;
   pointer-events: none;
+}
+.content_wrapper .filters_wrapper .filter_wrapper #before_date, .content_wrapper .filters_wrapper .filter_wrapper #after_date {
+  padding-right: 0;
 }
 .content_wrapper .filters_wrapper .filter_wrapper .hero_name_filter {
   width: 100%;
@@ -131,6 +135,7 @@ html {
   display: grid;
   width: 100%;
   grid-template-columns: repeat(6, 160px);
+  justify-content: center;
 }
 .content_wrapper .hero_cards .hero_card {
   padding: 10px;

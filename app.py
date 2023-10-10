@@ -4,24 +4,19 @@ import uuid
 
 from PIL import Image
 from waitress import serve
-from flask import Flask, send_from_directory, render_template, request, redirect, make_response
+from flask import Flask, send_from_directory, render_template, request, redirect, make_response, url_for
 
 app = Flask(__name__)
 
 SECRET_TOKEN = 'e0380cca-93ba-409d-9d3e-d38287964a94'
 
 
-@app.route('/admin_for_lesia')
+@app.route('/admin_panel')
 def adminhome():
-    # if request.cookies.get('admin') == SECRET_TOKEN:
-    return render_template('admin.html')
-    # else:
-    #     return redirect('/login')
-
-
-# @app.route('/login')
-# def login():
-#     return render_template('login.html')
+    if request.cookies.get('admin') == SECRET_TOKEN:
+        return render_template('admin.html')
+    else:
+        return redirect(url_for('login'))
 
 @app.route('/getjson')
 def getjson():
@@ -108,6 +103,7 @@ def delete_file():
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
+        print(request.form['username'])
         if request.form['username'] == 'Lesya' and request.form['password'] == 'Admin123':
             resp = make_response(redirect('/admin_for_lesia'))
             resp.set_cookie('admin', SECRET_TOKEN, max_age=60 * 60 * 24 * 365)  # 1 year
