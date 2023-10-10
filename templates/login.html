@@ -17,11 +17,11 @@
             <input type="text" id="password" name="password">
             <button>ЗАЙТИ</button>
         </form>
+        {% if error %}
+            <div class="error_window">
+                {{error}}
+            </div>
+        {% endif %}
     </div>
-    {% if error %}
-        <div class="error_window">
-            {{error}}
-        </div>
-    {% endif %}
 </body>
 </html>

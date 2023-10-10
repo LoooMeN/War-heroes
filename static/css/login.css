@@ -13,6 +13,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   background: rgb(2, 0, 36);
   background: linear-gradient(153deg, rgb(2, 0, 36) 0%, rgb(9, 9, 121) 35%, rgb(0, 212, 255) 100%);
 }
@@ -20,7 +21,6 @@
   width: 335px;
   display: flex;
   flex-direction: column;
-  margin: auto;
   border-radius: 10px;
   padding: 10px;
 }
@@ -46,10 +46,11 @@
   margin-top: 30px;
 }
 .main_wrapper .error_window {
-  border: 2px solid red;
+  border: 2px solid rgba(241, 26, 26, 0.766);
   border-radius: 15px;
-  position: absolute;
-  bottom: 15px;
-  right: 15px;
-  max-width: 300px;
+  width: 315px;
+  color: white;
+  text-align: center;
+  padding: 20px 40px;
+  margin-top: 15px;
 }
