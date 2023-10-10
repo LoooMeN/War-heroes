@@ -1,5 +1,6 @@
 import json
 import os
+import uuid
 
 from PIL import Image
 from flask import Flask, send_from_directory, render_template, request
@@ -68,14 +69,22 @@ def upload_file():
         return False
 
     if image:
-        filename = f'./static/photos/{file.filename}'
+        # use uuid4 to generate a random string and get the file extension
+        filename = f'./static/photos/{str(uuid.uuid4())}.{file.filename.split(".")[-1]}'
         new_image.save(filename)
         return filename
 
 
 @app.route('/Images', methods=['DELETE'])
 def delete_file():
-    filename = json.loads(request.data)['filename']
+    file_path = request.args.get('filePath')
+    if file_path is None:
+        return {'status': 'error', 'message': 'No file path'}
+
+    filename = file_path.split('/')[-1]
+    if filename == 'placeholder.png':
+        return {'status': 'error', 'message': 'File not found'}
+
     try:
         os.remove(f'./static/photos/{filename}')
         return {'status': 'ok'}

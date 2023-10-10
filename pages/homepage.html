@@ -20,35 +20,35 @@
        <div class="filters_wrapper">
             <div class="filter_wrapper search">
                 <label for="">Пошук</label>
-                <input class="hero_name_filter" type="text" placeholder="Введіть ім'я" id="hero_name_filter">
-                <div class="icon_image_wrapper" onclick="filter(this, 'name')">
+                <input filtrable="true" name="name" class="hero_name_filter" type="text" placeholder="Введіть ім'я" id="hero_name_filter">
+                <div class="icon_image_wrapper" onclick="filter1()">
                     <img src="/static/images/search.png" alt="">
                 </div>
             </div>
             <div class="filter_wrapper select">
                 <label for="">Область</label>
-                <select name="region" id="region_select" onchange="filter(this.value, 'region')">
+                <select filtrable="true" name="region" id="region_select" onchange="filter1()">
                     <option value="all">Всі області</option>
                 </select>
                 <img class="select_down_arrow" src="/static/images/down_arrow.svg" alt="">
             </div>
             <div class="filter_wrapper select">
                 <label for="">Стать</label>
-                <select name="gender" id="gender_select" onchange="filter(this.value, 'gender')">
+                <select filtrable="true" name="gender" id="gender_select" onchange="filter1()">
                     <option value="all">Будь яка</option>
                 </select>
                 <img class="select_down_arrow" src="/static/images/down_arrow.svg" alt="">
             </div>
             <div class="filter_wrapper datepicker">
                 <label for="">Дата від</label>
-                <input id="after_date" type="date" onchange="filterDate()">
+                <input filtrable="true" name="after_date" id="after_date" type="date" onchange="filter1()">
                 <div class="icon_image_wrapper">
                     <img src="/static/images/calendar.svg" alt="">
                 </div>
             </div>
             <div class="filter_wrapper datepicker">
                 <label for="">Дата до</label>
-                <input id="before_date" type="date" onchange="filterDate()">
+                <input filtrable="true" name="before_date" id="before_date" type="date" onchange="filter1()">
                 <div class="icon_image_wrapper">
                     <img src="/static/images/calendar.svg" alt="">
                 </div>
@@ -76,7 +76,7 @@
                 <div class="hero_card" name="Jane Smith" dateadded="2023-04-05" deathdate="2023-03-10" gender="female" region="Lviv">
                     <a href="https://google.com/">
                         <div class="hero_image_wrapper">
-                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/ec9a9a01-66ec-4e84-8e21-0e63c18d6b2d.jpg" alt="">
                             <div class="details">
                                 <p class="details_text">Детальніше</p>
                                 <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
@@ -93,7 +93,7 @@
                 <div class="hero_card" name="Mike Johnson" dateadded="2023-06-15" deathdate="2023-05-22" gender="male" region="Kharkiv">
                     <a href="https://google.com/">
                         <div class="hero_image_wrapper">
-                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
+                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/ImiDaily.png" alt="">
                             <div class="details">
                                 <p class="details_text">Детальніше</p>
                                 <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
@@ -104,23 +104,6 @@
                         <p>Kharkiv</p>
                         <p>Major</p>
                         <p>2023-05-22</p>
-                    </a>
-                </div>
-            
-                <div class="hero_card" name="Emily Davis" dateadded="2023-08-12" deathdate="2023-07-30" gender="female" region="Odesa">
-                    <a href="https://google.com/">
-                        <div class="hero_image_wrapper">
-                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
-                            <div class="details">
-                                <p class="details_text">Детальніше</p>
-                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
-                            </div>
-                        </div>
-                        
-                        <h2>Emily<br>Davis</h2>
-                        <p>Odesa</p>
-                        <p>Lieutenant</p>
-                        <p>2023-07-30</p>
                     </a>
                 </div>
             
@@ -138,23 +121,6 @@
                         <p>Dnipro</p>
                         <p>Colonel</p>
                         <p>2023-09-18</p>
-                    </a>
-                </div>
-            
-                <div class="hero_card" name="Sarah Brown" dateadded="2023-12-08" deathdate="2023-11-05" gender="female" region="Zaporizhia">
-                    <a href="https://google.com/">
-                        <div class="hero_image_wrapper">
-                            <img class="hero_image" src="http://127.0.0.1:5000/static/photos/placeholder.png" alt="">
-                            <div class="details">
-                                <p class="details_text">Детальніше</p>
-                                <img class="details_arrow" src="/static/images/down_arrow.svg" alt="">
-                            </div>
-                        </div>
-                        
-                        <h2>Sarah<br>Brown</h2>
-                        <p>Zaporizhia</p>
-                        <p>General</p>
-                        <p>2023-11-05</p>
                     </a>
                 </div>
             

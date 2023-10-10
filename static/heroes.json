@@ -11,7 +11,7 @@
       "date_added": "2023-02-20"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:5000/static/photos/ec9a9a01-66ec-4e84-8e21-0e63c18d6b2d.jpg",
       "name": "Jane Smith",
       "region": "Lviv",
       "gender": "female",
@@ -21,7 +21,7 @@
       "date_added": "2023-04-05"
     },
     {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
+      "image": "http://127.0.0.1:5000/static/photos/ImiDaily.png",
       "name": "Mike Johnson",
       "region": "Kharkiv",
       "gender": "male",
@@ -32,16 +32,6 @@
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
-      "name": "Emily Davis",
-      "region": "Odesa",
-      "gender": "female",
-      "position": "Lieutenant",
-      "death_date": "2023-07-30",
-      "url": "https://google.com/",
-      "date_added": "2023-08-12"
-    },
-    {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
       "name": "David Wilson",
       "region": "Dnipro",
       "gender": "male",
@@ -49,16 +39,6 @@
       "death_date": "2023-09-18",
       "url": "https://google.com/",
       "date_added": "2023-10-25"
-    },
-    {
-      "image": "http://127.0.0.1:5000/static/photos/placeholder.png",
-      "name": "Sarah Brown",
-      "region": "Zaporizhia",
-      "gender": "female",
-      "position": "General",
-      "death_date": "2023-11-05",
-      "url": "https://google.com/",
-      "date_added": "2023-12-08"
     },
     {
       "image": "http://127.0.0.1:5000/static/photos/placeholder.png",

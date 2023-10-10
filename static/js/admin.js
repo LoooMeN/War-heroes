@@ -105,7 +105,10 @@ function saveImage(upload) {
         method: "POST",
         body: formData
     }).then(response => response.text())
-        // .then(fetch('delete-image', { method: "POST", body: image.src }))
+        .then(fetch(
+                '/Images?filePath='+image.src,
+                { method: "DELETE"}
+            ))
         .then(data => image.src = data)
 }
 
@@ -131,7 +134,7 @@ function save() {
         if (itemResult['name'].length > 2)
             result['heroes'].push(itemResult)
     })
-    fetch('./setjson', {
+    fetch('/setjson', {
         method: "POST",
         body: JSON.stringify(result)
     }).then(location.reload())
