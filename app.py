@@ -41,11 +41,11 @@ def favicon():
 def home():
     # with open('./static/heroes.json', 'r', encoding='utf-8') as file:
     #     return render_template('home.html', data=json.loads(file.read())['heroes'])
-    try:
-        with open('./pages/homepage.html', 'r', encoding='utf-8') as page:
-            return page.read()
-    except FileNotFoundError:
-        return "Page not found!"
+    # try:
+    with open('./pages/homepage.html', 'r', encoding='utf-8') as page:
+        return page.read()
+    # except FileNotFoundError:
+    #     return "Page not found!"
 
 
 @app.route('/Images', methods=['POST'])
