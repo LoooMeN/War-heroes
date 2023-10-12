@@ -25,7 +25,8 @@ html {
     min-height: 100vh;
     background-color: rgba(0, 0, 0, 0.27);
     background-image: url('../images/admin_background.webp');
-    background-size: contain;
+    background-size: cover;
+    background-attachment: fixed;
     display: flex;
     justify-content: center;
     box-sizing: border-box;
