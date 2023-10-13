@@ -76,7 +76,7 @@
        <div class="hero_cards">
             {% for hero in data %}
                 <div class="hero_card" name="{{hero['name']}}" dateadded="{{hero['date_added']}}" deathdate="{{hero['death_date']}}" gender="{{hero['gender']}}" region="{{ hero['region'] }}">
-                    <a href="{{ hero['url']}}">
+                    <a href="{{ hero['url']}}" target="_blank">
                         <div class="hero_image_wrapper">
                             <img class="hero_image" src="{{ hero['image'] }}" alt="">
                             <div class="details">
