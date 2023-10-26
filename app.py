@@ -18,6 +18,7 @@ def adminhome():
     else:
         return redirect(url_for('login'))
 
+
 @app.route('/getjson')
 def getjson():
     return send_from_directory('static', "heroes.json")
@@ -26,6 +27,7 @@ def getjson():
 @app.route('/setjson', methods=["POST"])
 def setjson():
     data = json.loads(request.data)
+
     with open('./static/heroes.json', 'w', encoding='utf-8') as file:
         file.write(json.dumps(data, indent=2))
 
@@ -33,9 +35,11 @@ def setjson():
         page.write(render_template('home.html', data=data['heroes']))
     return {'status': 'ok'}
 
+
 @app.route('/favicon.ico')
 def favicon():
     return send_from_directory('static', 'images/favicon.png')
+
 
 @app.route('/')
 def home():

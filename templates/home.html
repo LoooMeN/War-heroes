@@ -88,8 +88,12 @@
                         <h2>{{name[0]}}<br>{{name[1]}}</h2>
                         <p>{{ hero['region'] }}</p>
                         <p>{{ hero['position'] }}</p>
-                        {% set tempdate = hero['death_date'].split('-') %}
-                        <p>{{ tempdate[2]+"."+tempdate[1]+"."+tempdate[0] }}</p>
+                        {% if hero['death_date'] %}
+                            {% set tempdate = hero['death_date'].split('-') %}
+                            <p>{{ tempdate[2]+"."+tempdate[1]+"."+tempdate[0] }}</p>
+                        {% else %}
+                            <p></p>
+                        {% endif %}
                     </a>
                 </div>
             {% endfor %}
