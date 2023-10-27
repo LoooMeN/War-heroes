@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
-    <title>Сторінка пам'яті героїв війни | Obozrevatel</title>
-    <meta name="description" content="Сторінка присвячена пам'яті героїв війни, що хоробро боронять нашу країну | Obozrevatel">
+    <title>Сторінка пам'яті Героїв війни | OBOZ.UA</title>
+    <meta name="description" content="Сторінка присвячена пам'яті Героїв війни, що хоробро боронили нашу країну | OBOZ.UA">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Сторінка пам'яті героїв війни | Obozrevatel">
-    <meta property="og:description" content="Сторінка присвячена пам'яті героїв війни, що хоробро боронять нашу країну | Obozrevatel">
+    <meta property="og:title" content="Сторінка пам'яті Героїв війни | OBOZ.UA">
+    <meta property="og:description" content="Сторінка присвячена пам'яті Героїв війни, що хоробро боронили нашу країну | OBOZ.UA">
     <meta property="og:site_name" content="WAR HEROES OBOZREVATEL">
-    <meta property="og:image" content="{{ url_for('static', filename='images/social.jpg')}}">
+    <meta property="og:image" content="/static/images/social.jpg">
     <meta property="og:image:type" content="image/jpg">
     <meta property="og:image:width" content="2010px">
     <meta property="og:image:height" content="1050px">
-    <meta property="og:url" content="{{ url_for('home') }}">
+    <meta property="og:url" content="/">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Сторінка пам'яті героїв війни | Obozrevatel">
-    <meta name="twitter:description" content="Сторінка присвячена пам'яті героїв війни, що хоробро боронять нашу країну | Obozrevatel">
-    <meta name="twitter:image" content="{{ url_for('static', filename='images/social.jpg')}}">
+    <meta name="twitter:title" content="Сторінка пам'яті Героїв війни | OBOZ.UA">
+    <meta name="twitter:description" content="Сторінка присвячена пам'яті Героїв війни, що хоробро боронили нашу країну | OBOZ.UA">
+    <meta name="twitter:image" content="/static/images/social.jpg">
     <meta name="twitter:site" content="@obozrevatel_ua">
     <meta name="twitter:dnt" content="on">
     <link rel="canonical" href="{{ url_for('home') }}">
@@ -33,7 +33,9 @@
                 <img class="scroll_button" src="{{ url_for('static', filename='images/scroll_button.png') }}" alt="">
             </a>
         </div>
-        <img class="oboz_logo" src="{{ url_for('static', filename='images/Obozevatel_Logo.svg') }}" alt="">
+        <a href="https://www.obozrevatel.com/" target="_blank">
+            <img class="oboz_logo" src="{{ url_for('static', filename='images/Obozevatel_Logo.svg') }}" alt="">
+        </a>
     </div>
     <div class="content_wrapper" id="content">
        <div class="filters_wrapper">
@@ -101,7 +103,9 @@
     </div>
     <div class="footer">
         <div class="footer_wrapper">
-            <img src="{{ url_for('static', filename='images/Obozevatel_Logo.svg') }}" alt="">
+            <a href="https://www.obozrevatel.com/" target="_blank">
+                <img src="{{ url_for('static', filename='images/Obozevatel_Logo.svg') }}" alt="">
+            </a>
             <p>2023</p>
         </div>
     </div>
