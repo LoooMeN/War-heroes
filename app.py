@@ -36,7 +36,10 @@ def setjson():
 
     with open('./pages/homepage.html', 'w', encoding='utf-8') as page:
         page.write(render_template('home.html', data=data['heroes']))
-    return {'status': 'ok'}
+
+    resp = make_response({'status': 'ok'})
+    resp.headers['Access-Control-Allow-Origin'] = '*'
+    return resp
 
 
 @app.route('/favicon.ico')
