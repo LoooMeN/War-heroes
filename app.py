@@ -39,6 +39,7 @@ def setjson():
 
     resp = make_response({'status': 'ok'}, 200)
     resp.headers['Access-Control-Allow-Origin'] = '*'
+    resp.headers['Access-Control-Allow-Headers'] = '*'
     return resp
 
 
