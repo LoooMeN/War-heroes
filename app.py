@@ -5,8 +5,10 @@ import uuid
 from PIL import Image
 from waitress import serve
 from flask import Flask, send_from_directory, render_template, request, redirect, make_response, url_for
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app, origins='*')
 
 SECRET_TOKEN = 'e0380cca-93ba-409d-9d3e-d38287964a94'
 
