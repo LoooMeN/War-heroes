@@ -27,7 +27,7 @@ def getjson():
 
 
 @app.route('/setjson', methods=["POST"])
-@cross_origin(origins='*', methods=['POST'])
+@cross_origin(origins='*')
 def setjson():
     data = json.loads(request.data)
 
@@ -37,7 +37,7 @@ def setjson():
     with open('./pages/homepage.html', 'w', encoding='utf-8') as page:
         page.write(render_template('home.html', data=data['heroes']))
 
-    resp = make_response({'status': 'ok'})
+    resp = make_response({'status': 'ok'}, 200)
     resp.headers['Access-Control-Allow-Origin'] = '*'
     return resp
 
