@@ -112,7 +112,7 @@ function saveImage(upload) {
         .then(data => image.src = data)
 }
 
-function save() {
+async function save() {
     let items = document.querySelectorAll('.item_wrapper')
     let result = {"heroes": []}
 
@@ -128,14 +128,13 @@ function save() {
             "date_added": elem.getAttribute('adddate')
         }
 
-        if (itemResult['name'].length > 2 && itemResult['date_added'] == 'new')
+        if (itemResult['date_added'] == 'new')
             itemResult['date_added'] = new Date().toJSON().slice(0, 10);
 
-        if (itemResult['name'].length > 2)
-            result['heroes'].push(itemResult)
+        result['heroes'].push(itemResult)
     })
-    fetch('/setjson', {
+    let resp = await fetch('/setjson', {
         method: "POST",
         body: JSON.stringify(result)
-    }).then(location.reload())
+    }).then(() => {window.location.reload(true)})
 }
