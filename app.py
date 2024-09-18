@@ -71,16 +71,17 @@ def heroes(service=HeroService()):
         return hero.model_dump()
 
 
-@app.route('/heroes/<id>', methods=['GET', 'DELETE'])
-def heroes_with_id(id: str, service=HeroService()):
+@app.route('/heroes/<hero_id>', methods=['GET', 'DELETE'])
+def heroes_with_id(hero_id: str, service=HeroService()):
     if request.cookies.get('admin') != SECRET_TOKEN:
         return {'status': 'error', 'message': 'You are not an admin'}
 
     if request.method == 'GET':
-        return service.get(id).model_dump()
+        return service.get(hero_id).model_dump()
 
     if request.method == 'DELETE':
-        service.delete(id)
+        print(hero_id)
+        service.delete(hero_id)
         service.update_homepage()
         return {'status': 'success'}
 
