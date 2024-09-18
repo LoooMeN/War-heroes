@@ -7,6 +7,7 @@ function selfDelete(element, id) {
     }
     else {
         element.parentElement.remove()
+        addFirstCard();
     }
 }
 
@@ -41,8 +42,56 @@ async function getJson() {
     return(heroes)
 }
 
+function addFirstCard() {
+
+
+    const item = `                <div class="item_wrapper" addDate="new">
+                    <div class="image_select">
+                        <img src="{{ url_for('static', filename='photos/placeholder.png') }}" alt="">
+                        <div class="image_button_wrapper">
+                            <p>142x142</p>
+                            <label>завантажити<input class="image_input" type="file" accept="image/jpeg, image/png, image/jpg" onchange="saveImage(this)"></label>
+                        </div>
+                    </div>
+                    <!-- name -->
+                    <div class="input_wrapper"> 
+                        <label for="">Ім'я героя</label>
+                        <input class="heroName" type="text" placeholder="новий герой">
+                    </div>
+                    <!-- region -->
+                    <div class="input_wrapper">
+                        <label for="">Регіон</label>
+                        <input class="heroRegion" type="text">
+                    </div>
+                    <!-- gender -->
+                    <div class="input_wrapper">
+                        <label for="">Стать</label>
+                        <input class="heroGender" type="text">
+                    </div>
+                    <!-- position -->
+                    <div class="input_wrapper">
+                        <label for="">Посада</label>
+                        <input class="heroPosition" type="text">
+                    </div>
+                    <!-- death date -->
+                    <div class="input_wrapper">
+                        <label for="">Дата загибелі</label>
+                        <input class="heroDeathDate" type="date">
+                    </div>
+                    <!-- url -->
+                    <div class="input_wrapper">
+                        <label for="">Посилання</label>
+                        <input class="heroLink" type="text">
+                    </div>
+                    <button class="delete_button" onclick="selfDelete(this, 0)">Видалити</button>
+                </div>`;
+        itemsWrapper.insertBefore(tempItem, itemsWrapper.firstChild);
+}
+
 function populateAdmin(data) {
     let itemsWrapper = document.querySelector('.items_wrapper');
+
+    addFirstCard();
 
     data.forEach((elem) => {
         let tempItem = document.createElement('div')
