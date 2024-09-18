@@ -100,17 +100,19 @@ html {
   justify-content: space-between;
   margin: 5px 0;
 }
-.main_wrapper .content_wrapper .items_wrapper .item_wrapper .delete_button {
+.main_wrapper .content_wrapper .items_wrapper .item_wrapper .control_buttons {
   position: absolute;
   top: 3px;
   right: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.main_wrapper .content_wrapper .items_wrapper .item_wrapper .control_buttons .delete_button {
   background-color: red;
   color: white;
 }
-.main_wrapper .content_wrapper .items_wrapper .item_wrapper .save_button {
-  position: absolute;
-  top: 13px;
-  right: 3px;
+.main_wrapper .content_wrapper .items_wrapper .item_wrapper .control_buttons .save_button {
   background-color: green;
   color: white;
 }

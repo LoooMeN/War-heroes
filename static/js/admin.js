@@ -3,10 +3,10 @@ function selfDelete(element, id) {
 
     if (id !== 0)
     {
-        fetch('/heroes/' + id, {method: "Delete"}).then(res => element.parentElement.remove());
+        fetch('/heroes/' + id, {method: "Delete"}).then(res => element.parentElement.parentElement.remove());
     }
     else {
-        element.parentElement.remove()
+        element.parentElement.parentElement.remove()
         addFirstCard();
     }
 }
@@ -87,8 +87,10 @@ function addFirstCard() {
                         <label for="">Посилання</label>
                         <input class="heroLink" type="text">
                     </div>
-                    <button class="delete_button" onclick="selfDelete(this, 0)">Видалити</button>
-                    <button class="save_button" onclick="save(this, 0)">Зберігти</button>
+                    <div class="control_buttons">
+                        <button class="delete_button" onclick="selfDelete(this, 0)">Видалити</button>
+                        <button class="save_button" onclick="save(this, 0)">Зберігти</button>
+                    </div>
                 `;
         tempItem.innerHTML = item;
         itemsWrapper.insertBefore(tempItem, itemsWrapper.firstChild);
@@ -146,8 +148,10 @@ function populateAdmin(data) {
                         <label for="">Посилання</label>
                         <input class="heroLink" type="text" value="`+elem["url"]+`">
                     </div>
-                    <button class="delete_button" onclick="selfDelete(this, '`+elem["id"]+`')">Видалити</button>
-                    <button class="save_button" onclick="save(this, '`+elem["id"]+`')">Зберігти</button>
+                    <div class="control_buttons">
+                        <button class="delete_button" onclick="selfDelete(this, '`+elem["id"]+`')">Видалити</button>
+                        <button class="save_button" onclick="save(this, '`+elem["id"]+`')">Зберігти</button>
+                    </div>
                 `
         tempItem.innerHTML = item;
         itemsWrapper.appendChild(tempItem)
@@ -174,7 +178,7 @@ function saveImage(upload) {
 }
 
 async function save(element, id) {
-    let item = element.parentElement;
+    let item = element.parentElement.parentElement;
     let method = "PUT"
 
     let itemResult = {
