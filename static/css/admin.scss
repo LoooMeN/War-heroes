@@ -115,6 +115,16 @@ html {
                     position: absolute;
                     top: 3px;
                     right: 3px;
+                    background-color: red;
+                    color: white;
+                }
+
+                .create_button {
+                    position: absolute;
+                    top: 13px;
+                    right: 3px;
+                    background-color: green;
+                    color: white;
                 }
             }
         }
