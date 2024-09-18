@@ -88,7 +88,7 @@ function addFirstCard() {
                         <input class="heroLink" type="text">
                     </div>
                     <button class="delete_button" onclick="selfDelete(this, 0)">Видалити</button>
-                    <button class="delete_button" onclick="save(this, 0)">Зберігти</button>
+                    <button class="save_button" onclick="save(this, 0)">Зберігти</button>
                 `;
         tempItem.innerHTML = item;
         itemsWrapper.insertBefore(tempItem, itemsWrapper.firstChild);
@@ -147,7 +147,7 @@ function populateAdmin(data) {
                         <input class="heroLink" type="text" value="`+elem["url"]+`">
                     </div>
                     <button class="delete_button" onclick="selfDelete(this, '`+elem["id"]+`')">Видалити</button>
-                    <button class="delete_button" onclick="save(this, '`+elem["id"]+`')">Зберігти</button>
+                    <button class="save_button" onclick="save(this, '`+elem["id"]+`')">Зберігти</button>
                 `
         tempItem.innerHTML = item;
         itemsWrapper.appendChild(tempItem)

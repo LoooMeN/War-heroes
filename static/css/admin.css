@@ -107,7 +107,7 @@ html {
   background-color: red;
   color: white;
 }
-.main_wrapper .content_wrapper .items_wrapper .item_wrapper .create_button {
+.main_wrapper .content_wrapper .items_wrapper .item_wrapper .save_button {
   position: absolute;
   top: 13px;
   right: 3px;
