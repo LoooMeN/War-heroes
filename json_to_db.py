@@ -4,7 +4,7 @@ from backend.services.hero_service import HeroService
 
 
 def migration():
-    with open('../../static/heroes.json', 'r') as file:
+    with open('static/heroes.json', 'r') as file:
         json_data = json.loads(file.read())
 
     service = HeroService()
