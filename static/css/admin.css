@@ -107,6 +107,7 @@ html {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  gap: 5px;
 }
 .main_wrapper .content_wrapper .items_wrapper .item_wrapper .control_buttons .delete_button {
   background-color: red;
