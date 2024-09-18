@@ -1,6 +1,3 @@
-// while (prompt("Введіть пароль") != "obozrevatelbest")
-//     alert("не правильний пароль")
-
 function selfDelete(element, id) {
     if (id > 0)
     {
