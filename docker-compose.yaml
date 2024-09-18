@@ -1,0 +1,28 @@
+version: '3.8'
+name: war_heroes
+services:
+  backend:
+    build: .
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mongodb
+    networks:
+      - web
+    env_file:
+      - .env
+  mongodb:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/mongodb
+    networks:
+      - web
+    env_file:
+      - .env
+networks:
+  web:
+    driver: bridge
+volumes:
+  mongodb_data:

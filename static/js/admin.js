@@ -7,7 +7,7 @@ function selfDelete(element) {
 
 window.addEventListener("load", (event) => {
     getJson().then((data) => {
-        populateAdmin(data['heroes'])
+        populateAdmin(data)
         filter()
     })
 });
@@ -31,7 +31,7 @@ function filter() {
 
 
 async function getJson() {
-    const response = await fetch('./getjson')
+    const response = await fetch('./heroes')
     const heroes = await response.json();
     return(heroes)
 }
