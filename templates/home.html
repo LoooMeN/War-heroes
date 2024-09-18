@@ -83,7 +83,7 @@
                             <img class="hero_image" src="{{ hero['image'] }}" alt="">
                             <div class="details">
                                 <p class="details_text">Детальніше</p>
-                                <img class="details_arrow" src="{{ url_for('static', filename='images/down_arrow.svg') }}" alt="">
+                                <img class="details_arrow" loading="lazy" src="{{ url_for('static', filename='images/down_arrow.svg') }}" alt="">
                             </div>
                         </div>
                         {% set name = hero['name'].split(' ') %}
