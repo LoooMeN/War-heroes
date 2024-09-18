@@ -1,7 +1,7 @@
 from typing import Annotated
 
 from bson import ObjectId
-from pydantic import BaseModel, Field, field_validator, BeforeValidator
+from pydantic import BaseModel, Field, field_validator, BeforeValidator, ConfigDict
 
 
 def id_factory():
@@ -21,3 +21,7 @@ class Hero(BaseModel):
 
     death_date: str | None = Field(default=None)
     date_added: str | None = Field(default=None)
+
+    model_config = ConfigDict(
+        populate_by_name=True,
+    )

@@ -15,8 +15,8 @@ class HeroService:
         self.image_path = './static/images'
         self.homepage_path = './pages/homepage.html'
 
-    def get_list(self) -> list[Hero]:
-        return self.repository.get_list()
+    def get_list(self, skip: int = 0, take: int = 100) -> list[Hero]:
+        return self.repository.get_list(skip, take)
 
     def get(self, hero_id: str) -> Hero:
         return self.repository.get(hero_id)
@@ -26,9 +26,9 @@ class HeroService:
 
     def update(self, hero: Hero) -> Hero:
         if hero.id is None:
-            raise ValueError('No hero id')
+            raise {'status': 'error', 'message': 'No hero id'}
 
-        self.repository.update(hero.id, hero)
+        return self.repository.update(hero.id, hero)
 
     def delete(self, hero_id: str) -> None:
         self.repository.delete(hero_id)
@@ -50,7 +50,7 @@ class HeroService:
             new_image = new_image.crop((0, temp_size, 142, temp_size + 142))
 
         if file.filename == '':
-            raise ValueError('No file name')
+            raise {'status': 'error', 'message': 'No selected file'}
 
         if image:
             filename = f'{self.image_path}/{str(uuid.uuid4())}.{file.filename.split(".")[-1]}'
@@ -59,17 +59,17 @@ class HeroService:
 
     def delete_image(self, file_path: str) -> dict:
         if file_path is None:
-            raise ValueError('No file path')
+            raise {'status': 'error', 'message': 'No file path'}
 
         filename = file_path.split('/')[-1]
         if filename == 'placeholder.png':
-            raise FileNotFoundError('File not found')
+            raise {'status': 'error', 'message': 'Cannot delete placeholder'}
 
         try:
             os.remove(f'{self.image_path}/{filename}')
             return {'status': 'ok'}
         except FileNotFoundError:
-            raise FileNotFoundError('File not found')
+            raise {'status': 'error', 'message': 'No such file'}
 
     def get_homepage(self) -> str:
         try:
@@ -81,7 +81,7 @@ class HeroService:
                 return page.read()
 
     def update_homepage(self) -> bool:
-        heroes = self.get_list()
+        heroes = self.get_list(take=10000)
         with open(self.homepage_path, 'w', encoding='utf-8') as page:
             page.write(render_template('home.html', data=heroes))
         return True

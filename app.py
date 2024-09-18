@@ -64,9 +64,7 @@ def heroes(service=HeroService()):
         return hero.model_dump()
 
     if request.method == 'PUT':
-        hero = service.update(
-                Hero(**request.json)
-        )
+        hero = service.update(Hero(**request.json))
         service.update_homepage()
         return hero.model_dump()
 
