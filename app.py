@@ -48,7 +48,7 @@ def admin_home():
 
 
 @cross_origin(origins='*')
-@app.route('/heroes')
+@app.route('/heroes', methods=['GET', 'POST', 'PUT'])
 def heroes(service=HeroService()):
     if request.cookies.get('admin') != SECRET_TOKEN:
         return {'status': 'error', 'message': 'You are not an admin'}
