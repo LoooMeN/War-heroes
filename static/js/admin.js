@@ -88,6 +88,7 @@ function addFirstCard() {
                         <input class="heroLink" type="text">
                     </div>
                     <button class="delete_button" onclick="selfDelete(this, 0)">Видалити</button>
+                    <button class="delete_button" onclick="save(this, 0)">Зберігти</button>
                 `;
         tempItem.innerHTML = item;
         itemsWrapper.insertBefore(tempItem, itemsWrapper.firstChild);
@@ -146,6 +147,7 @@ function populateAdmin(data) {
                         <input class="heroLink" type="text" value="`+elem["url"]+`">
                     </div>
                     <button class="delete_button" onclick="selfDelete(this, '`+elem["id"]+`')">Видалити</button>
+                    <button class="delete_button" onclick="save(this, '`+elem["id"]+`')">Зберігти</button>
                 `
         tempItem.innerHTML = item;
         itemsWrapper.appendChild(tempItem)
@@ -171,29 +173,29 @@ function saveImage(upload) {
         .then(data => image.src = data)
 }
 
-async function save() {
-    let items = document.querySelectorAll('.item_wrapper')
-    let result = {"heroes": []}
+async function save(element, id) {
+    let item = element.parentElement;
+    let method = "POST"
 
-    items.forEach((elem) => {
-        let itemResult = {
-            "image": elem.querySelector('img').src,
-            "name": elem.querySelector('.heroName').value,
-            "region": elem.querySelector('.heroRegion').value,
-            "gender": elem.querySelector('.heroGender').value,
-            "position": elem.querySelector('.heroPosition').value,
-            "death_date": elem.querySelector('.heroDeathDate').value,
-            "url": elem.querySelector('.heroLink').value,
-            "date_added": elem.getAttribute('adddate')
-        }
+    let itemResult = {
+        "image": item.querySelector('img').src,
+        "name": item.querySelector('.heroName').value,
+        "region": item.querySelector('.heroRegion').value,
+        "gender": item.querySelector('.heroGender').value,
+        "position": item.querySelector('.heroPosition').value,
+        "death_date": item.querySelector('.heroDeathDate').value,
+        "url": item.querySelector('.heroLink').value,
+        "date_added": item.getAttribute('adddate'),
+        "id": id
+    }
 
-        if (itemResult['date_added'] == 'new')
-            itemResult['date_added'] = new Date().toJSON().slice(0, 10);
+    if (itemResult['date_added'] == 'new') {
+        itemResult['date_added'] = new Date().toJSON().slice(0, 10);
+        method = "PUT"
+    }
 
-        result['heroes'].push(itemResult)
-    })
-    let resp = await fetch('/setjson', {
-        method: "POST",
+    let resp = await fetch('/heroes', {
+        method: method,
         body: JSON.stringify(result)
     }).then(() => {window.location.reload(true)})
 }
