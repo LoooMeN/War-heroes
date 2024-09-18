@@ -45,6 +45,10 @@ async function getJson() {
 function addFirstCard() {
     let itemsWrapper = document.querySelector('.items_wrapper');
 
+    let tempItem = document.createElement('div')
+    tempItem.classList.add('item_wrapper')
+    tempItem.setAttribute("addDate", elem['date_added'])
+
     const item = `                <div class="item_wrapper" addDate="new">
                     <div class="image_select">
                         <img src="{{ url_for('static', filename='photos/placeholder.png') }}" alt="">
@@ -84,8 +88,9 @@ function addFirstCard() {
                         <input class="heroLink" type="text">
                     </div>
                     <button class="delete_button" onclick="selfDelete(this, 0)">Видалити</button>
-                </div>`;
-        itemsWrapper.insertBefore(item, itemsWrapper.firstChild);
+                `;
+        tempItem.innerHTML = item;
+        itemsWrapper.insertBefore(tempItem, itemsWrapper.firstChild);
 }
 
 function populateAdmin(data) {
