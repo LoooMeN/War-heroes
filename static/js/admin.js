@@ -47,7 +47,7 @@ function addFirstCard() {
 
     let tempItem = document.createElement('div')
     tempItem.classList.add('item_wrapper')
-    tempItem.setAttribute("addDate", elem['date_added'])
+    tempItem.setAttribute("addDate", "new")
 
     const item = `                <div class="item_wrapper" addDate="new">
                     <div class="image_select">
