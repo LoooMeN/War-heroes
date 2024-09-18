@@ -80,7 +80,9 @@ def heroes_with_id(id: str, service=HeroService()):
         return service.get(id).model_dump()
 
     if request.method == 'DELETE':
-        return service.delete(request.args.get('id'))
+        service.delete(id)
+        service.update_homepage()
+        return {'status': 'success'}
 
 
 @app.route('/Images', methods=['POST', 'DELETE'])

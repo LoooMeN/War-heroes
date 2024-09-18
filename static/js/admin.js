@@ -1,10 +1,12 @@
 function selfDelete(element, id) {
-    if (id > 0)
+    console.log(element);
+
+    if (id !== 0)
     {
-        fetch('/heroes/' + id, {method: "Delete"}).then(res => element.remove());
+        fetch('/heroes/' + id, {method: "Delete"}).then(res => element.parentElement.remove());
     }
     else {
-        element.remove()
+        element.parentElement.remove()
     }
 }
 
@@ -89,7 +91,7 @@ function populateAdmin(data) {
                         <label for="">Посилання</label>
                         <input class="heroLink" type="text" value="`+elem["url"]+`">
                     </div>
-                    <button class="delete_button" onclick="selfDelete(this, `+elem["id"]+`)">Видалити</button>
+                    <button class="delete_button" onclick="selfDelete(this, '`+elem["id"]+`')">Видалити</button>
                 `
         tempItem.innerHTML = item;
         itemsWrapper.appendChild(tempItem)
