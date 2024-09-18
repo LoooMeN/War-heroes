@@ -49,9 +49,9 @@ function addFirstCard() {
     tempItem.classList.add('item_wrapper')
     tempItem.setAttribute("addDate", "new")
 
-    const item = `                <div class="item_wrapper" addDate="new">
+    const item = `
                     <div class="image_select">
-                        <img src="{{ url_for('static', filename='photos/placeholder.png') }}" alt="">
+                        <img src="/static/photos/placeholder.png" alt="">
                         <div class="image_button_wrapper">
                             <p>142x142</p>
                             <label>завантажити<input class="image_input" type="file" accept="image/jpeg, image/png, image/jpg" onchange="saveImage(this)"></label>
