@@ -18,7 +18,7 @@ class HeroService:
     def get_list(self) -> list[Hero]:
         return self.repository.get_list()
 
-    def get(self, hero_id: int) -> Hero:
+    def get(self, hero_id: str) -> Hero:
         return self.repository.get(hero_id)
 
     def create(self, hero: Hero) -> Hero:
@@ -30,7 +30,7 @@ class HeroService:
 
         self.repository.update(hero.id, hero)
 
-    def delete(self, hero_id: int) -> None:
+    def delete(self, hero_id: str) -> None:
         self.repository.delete(hero_id)
 
     def upload_image(self, file) -> str:

@@ -10,7 +10,7 @@ class HeroRepository:
         heroes = self.collection.find()
         return [Hero(**hero) for hero in heroes]
 
-    def get(self, hero_id: int) -> Hero:
+    def get(self, hero_id: str) -> Hero:
         hero = self.collection.find_one({"_id": hero_id})
         if hero is None:
             raise ValueError('No hero')
@@ -29,5 +29,5 @@ class HeroRepository:
         hero = self.collection.find_one({"_id": hero_id})
         return Hero(**hero)
 
-    def delete(self, hero_id: int) -> None:
-        self.collection.delete_one({"_id": hero_id})
+    def delete(self, id: str) -> None:
+        self.collection.delete_one({"_id": id})
