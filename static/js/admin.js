@@ -166,15 +166,17 @@ function saveImage(upload) {
     const formData = new FormData();
     formData.append('newImage', files[0])
 
-    fetch('/Images', {
-        method: "POST",
-        body: formData
-    }).then(response => response.text())
-        .then(fetch(
-                '/Images?filePath='+image.src,
-                { method: "DELETE"}
-            ))
-        .then(data => image.src = data)
+    if (upload.files && !image.src.includes('placeholder')) {
+        fetch('/Images', {
+            method: "POST",
+            body: formData
+        }).then(response => response.text())
+            .then(fetch(
+                    '/Images?filePath='+image.src,
+                    { method: "DELETE"}
+                ))
+            .then(data => image.src = data)
+    }
 }
 
 async function save(element, id) {
