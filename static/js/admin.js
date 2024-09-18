@@ -1,8 +1,14 @@
 // while (prompt("Введіть пароль") != "obozrevatelbest")
 //     alert("не правильний пароль")
 
-function selfDelete(element) {
-    element.parentElement.remove()
+function selfDelete(element, id) {
+    if (id > 0)
+    {
+        fetch('/heroes/' + id, {method: "Delete"}).then(res => element.remove());
+    }
+    else {
+        element.remove()
+    }
 }
 
 window.addEventListener("load", (event) => {
@@ -31,7 +37,7 @@ function filter() {
 
 
 async function getJson() {
-    const response = await fetch('./heroes')
+    const response = await fetch('/heroes')
     const heroes = await response.json();
     return(heroes)
 }
@@ -86,7 +92,7 @@ function populateAdmin(data) {
                         <label for="">Посилання</label>
                         <input class="heroLink" type="text" value="`+elem["url"]+`">
                     </div>
-                    <button class="delete_button" onclick="selfDelete(this)">Видалити</button>
+                    <button class="delete_button" onclick="selfDelete(this, `+elem["id"]+`)">Видалити</button>
                 `
         tempItem.innerHTML = item;
         itemsWrapper.appendChild(tempItem)
