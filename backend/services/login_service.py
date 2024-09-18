@@ -11,4 +11,5 @@ class LoginService:
         return username == self._admin_username and password == self._admin_password
 
     def login(self, resp):
-        return resp.set_cookie(self._admin_token_key, self._admin_token_value, max_age=self._admin_token_max_age)
+        resp.set_cookie(self._admin_token_key, self._admin_token_value, max_age=self._admin_token_max_age)
+        return resp
