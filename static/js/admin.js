@@ -43,7 +43,7 @@ async function getJson() {
 }
 
 function addFirstCard() {
-
+    let itemsWrapper = document.querySelector('.items_wrapper');
 
     const item = `                <div class="item_wrapper" addDate="new">
                     <div class="image_select">
@@ -85,7 +85,7 @@ function addFirstCard() {
                     </div>
                     <button class="delete_button" onclick="selfDelete(this, 0)">Видалити</button>
                 </div>`;
-        itemsWrapper.insertBefore(tempItem, itemsWrapper.firstChild);
+        itemsWrapper.insertBefore(item, itemsWrapper.firstChild);
 }
 
 function populateAdmin(data) {
