@@ -175,7 +175,7 @@ function saveImage(upload) {
 
 async function save(element, id) {
     let item = element.parentElement;
-    let method = "POST"
+    let method = "PUT"
 
     let itemResult = {
         "image": item.querySelector('img').src,
@@ -189,13 +189,16 @@ async function save(element, id) {
         "id": id
     }
 
-    if (itemResult['date_added'] == 'new') {
+    if (itemResult['date_added'] === 'new') {
         itemResult['date_added'] = new Date().toJSON().slice(0, 10);
-        method = "PUT"
+        method = "POST"
     }
 
     let resp = await fetch('/heroes', {
         method: method,
-        body: JSON.stringify(result)
-    }).then(() => {window.location.reload(true)})
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(itemResult)
+    }).then(() => {window.location.reload()})
 }
