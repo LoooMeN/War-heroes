@@ -10,7 +10,7 @@ def migration():
     service = HeroService()
     service.repository.collection.drop()
 
-    for json_hero in json_data['heroes']:
+    for json_hero in json_data['heroes'].reverse():
         hero = Hero(**json_hero)
         service.create(hero)
 
